@@ -15,7 +15,7 @@ var messages = {
 gulp.task('jekyll-dev', function (done) {
   browserSync.notify(messages.jekyllDev);
   return cp.spawn('jekyll', ['build', '--drafts', '--config', '_config.yml,_config_dev.yml'], {stdio: 'inherit'})
- .on('close', done);
+  .on('close', done);
 });
 
 gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
@@ -30,7 +30,7 @@ gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-dev'], function() {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('_sass/styles.scss')
+  return gulp.src('_sass/main.scss')
   .pipe(sass({
     includePaths: ['scss'],
     onError: browserSync.notify
