@@ -14,9 +14,6 @@ $(function() {
       videoHeight = $video.height(),
       videoAspectRatio = videoWidth / videoHeight;
 
-    console.log(containerAspectRatio >= videoAspectRatio);
-    console.log(containerHeight, videoAspectRatio, containerHeight * videoAspectRatio);
-
     if (containerAspectRatio >= videoAspectRatio) {
       $video.css({
         'width': containerWidth,
@@ -32,5 +29,35 @@ $(function() {
         'marginLeft': -(containerHeight * videoAspectRatio - videoWidth) / 2
       });
     }
+  }
+
+  if (screen.width > 640) {
+    $video.removeAttr('loop');
+
+    var i = 0;
+    var playlist = [
+      '1-shibuya',
+      '2-concrete-jungle',
+      '3-boat-lapse',
+      '4-birdcatcher'
+    ];
+
+    $video.on('ended', function (e) {
+      i++; if (i > 3) { i = 0; }
+
+      $('.app-header').css({
+        'backgroundImage': 'url(../videos/' + playlist[i] + '.jpg)'
+      });
+
+      $video.find('source[type="video/mp4"]').attr({
+        'src': 'videos/' + playlist[i] + '.mp4'
+      });
+      $video.find('source[type="video/webm"]').attr({
+        'src': 'videos/' + playlist[i] + '.webm'
+      });
+
+      $video.get(0).load();
+      $video.get(0).play();
+    });
   }
 });
