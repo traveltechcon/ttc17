@@ -37,16 +37,14 @@ gulp.task('sass', function () {
   }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
   .pipe(gulp.dest('_site/css'))
-  .pipe(browserSync.reload({stream:true}))
-  .pipe(gulp.dest('css'));
+  .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('scripts', function() {
   return gulp.src(['_js/*.js'])
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest('_site/js'))
-  .pipe(browserSync.reload({stream:true}))
-  .pipe(gulp.dest('js'));
+  .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('watch', function () {
@@ -69,16 +67,14 @@ gulp.task('sass-prod', function () {
   }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
   .pipe(cssnano())
-  .pipe(gulp.dest('_site/css'))
-  .pipe(gulp.dest('css'));
+  .pipe(gulp.dest('_site/css'));
 });
 
 gulp.task('scripts-prod', function() {
   return gulp.src(['_js/*.js'])
   .pipe(concat('scripts.js'))
   .pipe(uglify())
-  .pipe(gulp.dest('_site/js'))
-  .pipe(gulp.dest('js'));
+  .pipe(gulp.dest('_site/js'));
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
