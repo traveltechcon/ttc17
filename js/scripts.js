@@ -90,36 +90,33 @@ $(function () {
 });
 
 $(function() {
-  var $container = $('.video-background');
+  var $container = $('#video-background');
   var $video = $container.find('video');
 
   $(window).on('resize', scaleVideoContainer);
   scaleVideoContainer();
 
   function scaleVideoContainer() {
-    var containerWidth = $container.width(),
-      containerHeight = $container.height(),
-      containerAspectRatio = containerWidth / containerHeight;
+    var container = {
+      'width': $container.width(),
+      'height': $container.height(),
+    };
+    container.r = container.width / container.height;
 
-    var videoWidth = $video.width(),
-      videoHeight = $video.height(),
-      videoAspectRatio = videoWidth / videoHeight;
+    var originalVideo = {
+      'width': 1920,
+      'height': 1080
+    };
+    originalVideo.r = originalVideo.width / originalVideo.height;
 
-    if (containerAspectRatio >= videoAspectRatio) {
-      $video.css({
-        'width': containerWidth,
-        'height': containerWidth / videoAspectRatio,
-        'marginLeft': 0,
-        'marginTop': -(containerWidth / videoAspectRatio - videoHeight) / 2
-      });
-    } else {
-      $video.css({
-        'height': containerHeight,
-        'width': containerHeight * videoAspectRatio,
-        'marginTop': 0,
-        'marginLeft': -(containerHeight * videoAspectRatio - videoWidth) / 2
-      });
-    }
+    var newVideoDimensions = {
+      'width': originalVideo.r > container.r ? container.height * originalVideo.r : container.width,
+      'height': originalVideo.r > container.r ? container.height : container.width / originalVideo.r
+    };
+    newVideoDimensions.marginTop = originalVideo.r > container.r ? 0 : -(newVideoDimensions.height - container.height) / 2;
+    newVideoDimensions.marginLeft = originalVideo.r > container.r ?  -(newVideoDimensions.width - container.width) / 2 : 0;
+
+    $video.css(newVideoDimensions);
   }
 
   if (screen.width > 640) {
@@ -134,9 +131,9 @@ $(function() {
     ];
 
     $video.on('ended', function (e) {
-      i++; if (i > 3) { i = 0; }
+      i++; if (i > playlist.length) { i = 0; }
 
-      $('.app-header').css({
+      $container.css({
         'backgroundImage': 'url(../videos/' + playlist[i] + '.jpg)'
       });
 
