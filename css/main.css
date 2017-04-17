@@ -1,27 +1,17 @@
-#site-header .block-background {
+body {
+  letter-spacing: normal; }
+
+#video-background {
   background-image: url(../videos/1-shibuya.jpg);
   background-size: cover;
-  background-position: 50% 50%; }
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  background-position: 50% 50%;
   overflow: hidden; }
-  .video-background video {
+  #video-background .filter {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
-    width: 100%; }
-  .video-background .filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%; }
 
@@ -30,4 +20,31 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030; }
+  z-index: 10;
+  font-size: 1.2em;
+  letter-spacing: +0.04em;
+  font-weight: bolder; }
+
+.carousel .teaser {
+  width: 100%;
+  height: 300px;
+  text-align: center; }
+  .carousel .teaser h2 {
+    font-size: 4em;
+    font-weight: bold;
+    word-break: break-all;
+    text-shadow: -2px -1px 0 #000, -4px -2px 0 #000, -6px -3px 0 #000, -8px -4px 0 #000, -9px -4px 0 #fff; }
+    .carousel .teaser h2 span {
+      display: block;
+      font-size: 2em;
+      color: #C0B8FF; }
+  .carousel .teaser h4 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 20px 0; }
+
+#call-to-action .btn-lg {
+  font-size: 2rem;
+  -webkit-border-radius: .5rem;
+          border-radius: .5rem;
+  font-weight: normal; }

@@ -5,41 +5,58 @@ title: Travel Tech Con 2017
 
 <div class="stage" id="stage">
 
-  <div class="block block-inverse block-fill-height text-center" id="site-header">
+  <div class="block block-inverse block-fill-height" id="site-header">
+
     {% include desktop-navbar.html %}
 
     <div class="block-foreground">
-      <h1>Moving Travel Industry Forward. Together.</h1>
+      <div class="row py-5 px-2 justify-content-center">
+        <div class="col-sm-12 col-md-10 col-lg-9">
+          <h1 class="block-title text-center">The conference for travel&nbsp;startups and&nbsp;developers.</h1>
 
-      <div id="conference-stats">
-        <div>
-          <h2>3 days</h2>
-          <h3>May 22-24, 2017</h3>
+          <div id="teaser-carousel" class="carousel carousel-light slide py-2" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#teaser-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#teaser-carousel" data-slide-to="1"></li>
+              <li data-target="#teaser-carousel" data-slide-to="2"></li>
+              <li data-target="#teaser-carousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="teaser">
+                  <h2><span>3</span> days</h2>
+                  <h4>May 22-24, 2017 in San Francisco, California</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="teaser">
+                  <h2><span>28</span> presentations</h2>
+                  <h4>10 Workshops, 1 Pitch Competition</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="teaser">
+                  <h2><span>2</span> tracks</h2>
+                  <h4>Startup Track + Developer Track</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="teaser">
+                  <h2><span>450</span> attendees</h2>
+                  <h4>50% Travel Startups</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>28 presentations</h2>
-          <h3>9 workshops</h3>
-        </div>
-        <div>
-          <h2>2 tracks</h2>
-          <h3>startups | developers</h3>
-        </div>
-        <div>
-          <h2>450 attendees</h2>
-          <h3>50% startups</h3>
-        </div>
-      </div>
 
-      <div id="conference-info">
-        <p>Travel Tech Con is an independently organized event for travel startups, investors and established travel companies.</p>
-      </div>
+        <div class="text-center py-4" id="call-to-action">
+          <a href="https://www.eventbrite.com/e/travel-tech-con-2017-tickets-30070691247" class="btn btn-primary btn-lg btn-block mt-1" target="ttc17-tickets" id="buy-tickets">Buy Tickets</a>
 
-      <div id="call-to-action">
-        <a href="tickets" class="btn btn-primary btn-lg mt-1">Buy Tickets</a>
-        <a href="tickets" class="btn btn-info mt-1">Enter Pitch Competition</a>
-        <div>
-          <a href="sponsorship">Sponsorship Opportunities</a>
-          <a href="apply">Call for Proposals</a>
+          <div>
+            <a href="tickets" class="btn btn-info mt-1">Enter Pitch Competition</a>
+            <a href="sponsorship">Sponsorship Opportunities</a> <a href="apply">Call for Proposals</a>
+          </div>
         </div>
       </div>
     </div>

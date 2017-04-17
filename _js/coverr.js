@@ -40,7 +40,7 @@ $(function() {
     ];
 
     $video.on('ended', function (e) {
-      i++; if (i > playlist.length) { i = 0; }
+      i++; if (i > playlist.length - 1) { i = 0; }
 
       $container.css({
         'backgroundImage': 'url(../videos/' + playlist[i] + '.jpg)'
