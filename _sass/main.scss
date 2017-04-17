@@ -62,13 +62,14 @@ body {
   }
 }
 
+.real-big-button {
+  font-size: 2rem;
+  padding: 1.25rem 4rem;
+  border-radius: .5rem;
+  font-weight: normal;
+}
+
 #call-to-action {
-  .btn-primary {
-    font-size: 2rem;
-    padding: 1.25rem 4rem;
-    border-radius: .5rem;
-    font-weight: normal;
-  }
   p {
     font-size: 1.2em;
   }
@@ -89,15 +90,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
-  .text-ribbon-warning {
-    color: #333;
-  }
-
   p {
     font-size: 1.4em;
   }
 
   a {
     color: inherit;
+  }
+}
+
+.ttc-block {
+  p {
+    font-size: 1.6em;
+    text-align: justify;
   }
 }

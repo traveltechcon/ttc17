@@ -43,7 +43,7 @@ body {
     font-weight: normal;
     margin: 20px 0; }
 
-#call-to-action .btn-primary {
+.real-big-button {
   font-size: 2rem;
   padding: 1.25rem 4rem;
   -webkit-border-radius: .5rem;
@@ -63,9 +63,11 @@ body {
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover; }
-  #conference-agenda .text-ribbon-warning {
-    color: #333; }
   #conference-agenda p {
     font-size: 1.4em; }
   #conference-agenda a {
     color: inherit; }
+
+.ttc-block p {
+  font-size: 1.6em;
+  text-align: justify; }
