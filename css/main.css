@@ -43,8 +43,12 @@ body {
     font-weight: normal;
     margin: 20px 0; }
 
-#call-to-action .btn-lg {
+#call-to-action .btn-primary {
   font-size: 2rem;
+  padding: 1.25rem 4rem;
   -webkit-border-radius: .5rem;
           border-radius: .5rem;
   font-weight: normal; }
+
+#call-to-action p {
+  font-size: 1.2em; }

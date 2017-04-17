@@ -63,9 +63,13 @@ body {
 }
 
 #call-to-action {
-  .btn-lg {
+  .btn-primary {
     font-size: 2rem;
+    padding: 1.25rem 4rem;
     border-radius: .5rem;
     font-weight: normal;
+  }
+  p {
+    font-size: 1.2em;
   }
 }
