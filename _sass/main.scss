@@ -73,3 +73,12 @@ body {
     font-size: 1.2em;
   }
 }
+
+#industry-quote {
+  @media (min-width: 576px) {
+    .pull-quote > img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

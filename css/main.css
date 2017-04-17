@@ -52,3 +52,8 @@ body {
 
 #call-to-action p {
   font-size: 1.2em; }
+
+@media (min-width: 576px) {
+  #industry-quote .pull-quote > img {
+    width: 200px;
+    height: 200px; } }
