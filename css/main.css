@@ -63,3 +63,9 @@ body {
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover; }
+  #conference-agenda .text-ribbon-warning {
+    color: #333; }
+  #conference-agenda p {
+    font-size: 1.4em; }
+  #conference-agenda a {
+    color: inherit; }
