@@ -1,6 +1,61 @@
 ---
 layout: default
 title: Travel Tech Con 2017
+one_liner: The conference for travel&nbsp;startups and&nbsp;developers.
+tickets_link: Register
+tickets_caption: Startup Tickets From $150
+endorsement_quote: If you are in the industry and want to understand true innovation, I encourage you to attend Travel Tech Con.
+endorsement_author: Norm Rose, Travel Tech Consulting
+navigation:
+  - title: Pitch Competition
+    slug: pitch-competition
+  - title: Workshops
+    slug: workshops
+teasers:
+  - number: 3
+    what: days
+    caption: May 22-24, 2017 in San Francisco, California
+  - number: 28
+    what: talks
+    caption: 10 Workshops, 1 Pitch Competition
+  - number: 2
+    what: tracks
+    caption: Startup Track + Developer Track
+  - number: 450
+    what: attendees
+    caption: 50% Travel Startups
+  - number: 1
+    what: Afteparty
+    caption: DJ Justin Paul
+schedule:
+  - date: May 22
+    event: Pitch Competition
+    venue: 500 Startups
+    address: 814 Mission Street, 6th Floor
+    map_url: https://goo.gl/maps/DszBuskr2oy
+    target: 500startups
+    style: success
+  - date: May 23
+    event: Workshops
+    venue: 500 Startups
+    address: 814 Mission Street, 6th Floor
+    map_url: https://goo.gl/maps/DszBuskr2oy
+    target: 500startups
+    style: info
+  - date: May 24
+    event: Conference Day
+    venue: HOME on Treasure Island
+    address: 401 13th St
+    map_url: https://goo.gl/maps/HNEADWELAG62
+    target: homeonti
+    style: primary
+judges:
+  - name: Norm Rose
+    bio: Norm is great!
+    url: http://traveltechconsulting.com
+  - name: Rom Hendler
+    bio: Rom is awesome!
+    url: http://innovel.il
 ---
 
 <div class="stage" id="stage">
@@ -12,53 +67,29 @@ title: Travel Tech Con 2017
     <div class="block-foreground">
       <div class="row py-5 px-2 justify-content-center">
         <div class="col-sm-12 col-md-10 col-lg-9">
-          <h1 class="block-title text-center">The conference for travel&nbsp;startups and&nbsp;developers.</h1>
+          <h1 class="block-title text-center">{{ page.one_liner }}</h1>
 
           <div id="teaser-carousel" class="carousel carousel-light slide py-2" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#teaser-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#teaser-carousel" data-slide-to="1"></li>
-              <li data-target="#teaser-carousel" data-slide-to="2"></li>
-              <li data-target="#teaser-carousel" data-slide-to="3"></li>
-              <li data-target="#teaser-carousel" data-slide-to="4"></li>
+              {% for t in page.teasers %}
+                <li data-target="#teaser-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %} class="active"{% endif %}></li>
+              {% endfor %}
             </ol>
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="teaser">
-                  <h2><span>3</span> days</h2>
-                  <h4>May 22-24, 2017 in San Francisco, California</h4>
+              {% for t in page.teasers %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                  <div class="teaser">
+                    <h2><span>{{ t.number }}</span> {{ t.what }}</h2>
+                    <h4>{{ t.caption }}</h4>
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="teaser">
-                  <h2><span>28</span> talks</h2>
-                  <h4>10 Workshops, 1 Pitch Competition</h4>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="teaser">
-                  <h2><span>2</span> tracks</h2>
-                  <h4>Startup Track + Developer Track</h4>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="teaser">
-                  <h2><span>450</span> attendees</h2>
-                  <h4>50% Travel Startups</h4>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="teaser">
-                  <h2><span>Afterparty</span></h2>
-                  <h4>DJ Justin Paul</h4>
-                </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
 
           <div class="text-center py-4" id="call-to-action">
-            <a href="https://www.eventbrite.com/e/travel-tech-con-2017-tickets-30070691247" class="btn btn-primary btn-lg real-big-button" target="ttc17-tickets">Register</a>
-            <p>Startup Tickets From $150</p>
+            <a href="https://www.eventbrite.com/e/travel-tech-con-2017-tickets-30070691247" class="btn btn-primary btn-lg real-big-button" target="ttc17-tickets">{{ page.tickets_link }}</a>
+            <p>{{ page.tickets_caption }}</p>
           </div>
         </div>
       </div>
@@ -77,68 +108,33 @@ title: Travel Tech Con 2017
     <blockquote class="pull-quote">
       <img class="rounded-circle" src="img/norm-rose.jpg">
       <p>
-        “If you are in the industry and want to understand true innovation, I encourage you to attend Travel Tech Con.”
+        “{{ page.endorsement_quote }}”
       </p>
-      <cite>Norm Rose, Travel Tech Consulting</cite>
+      <cite>{{ page.endorsement_author }}</cite>
     </blockquote>
   </div>
 
   <div class="block block-secondary block-inverse px-5" id="conference-agenda">
     <div class="row py-1">
-      <div class="col-sm-4 py-3">
-        <h2 class="mt-5">
-          <strong class="text-ribbon text-ribbon-success">
-            <span>May 22: Pitch Competition</span>
-          </strong>
-        </h2>
-        <p class="mt-4">
-          <span class="text-ribbon text-ribbon-success">
-            <span>
-              <a href="https://goo.gl/maps/DszBuskr2oy" target="500startups">
-                500 Startups<br>
-                814 Mission Street, 6th Floor<br>
-                San Francisco
-              </a>
+      {% for d in page.schedule %}
+        <div class="col-sm-4 py-3">
+          <h2 class="mt-5">
+            <strong class="text-ribbon text-ribbon-{{ d.style }}">
+              <span>{{ d.date }}: {{ d.event }}</span>
+            </strong>
+          </h2>
+          <p class="mt-4">
+            <span class="text-ribbon text-ribbon-{{ d.style }}">
+              <span>
+                <a href="{{ d.map_url }}" target="{{ d.target }}">
+                  {{ d.venue }}<br>
+                  {{ d.address }}
+                </a>
+              </span>
             </span>
-          </span>
-        </p>
-      </div>
-      <div class="col-sm-4 py-3">
-        <h2 class="mt-5">
-          <strong class="text-ribbon text-ribbon-info">
-            <span>May 23: Workshops</span>
-          </strong>
-        </h2>
-        <p class="mt-4">
-          <span class="text-ribbon text-ribbon-info">
-            <span>
-              <a href="https://goo.gl/maps/DszBuskr2oy" target="500startups">
-                500 Startups<br>
-                814 Mission Street, 6th Floor<br>
-                San Francisco
-              </a>
-            </span>
-          </span>
-        </p>
-      </div>
-      <div class="col-sm-4 py-3">
-        <h2 class="mt-5">
-          <strong class="text-ribbon text-ribbon-primary">
-            <span>May 24: Conference Day</span>
-          </strong>
-        </h2>
-        <p class="mt-4">
-          <span class="text-ribbon text-ribbon-primary">
-            <span>
-              <a href="https://goo.gl/maps/HNEADWELAG62" target="homeonti">
-                HOME on Treasure Island<br>
-                401 13th St<br>
-                San Francisco
-              </a>
-            </span>
-          </span>
-        </p>
-      </div>
+          </p>
+        </div>
+      {% endfor %}
     </div>
   </div>
 
@@ -158,6 +154,87 @@ title: Travel Tech Con 2017
 
     <div class="py-4">
       <h2>Judges</h2>
+
+      <ul>{% for judge in page.judges %}
+        <li>{{ judge.name }}: {{ judge.bio }}</li>{% endfor %}
+      </ul>
+
+      <div class="container-fluid">
+        <div class="row my-4">
+          <div class="col-md-4">
+            <ul class="featured-list featured-list-bordered">
+              <li class="mb-5">
+                <div class="featured-list-icon">
+                  <span class="icon icon-dropbox"></span>
+                </div>
+
+                <h3>Save things</h3>
+                <p>
+                  Use dropbox to save things in the "cloud" because throwing things away is stressful and this way you don't have to.
+                </p>
+              </li>
+
+              <li>
+                <div class="featured-list-icon">
+                  <span class="icon icon-github"></span>
+                </div>
+                <h3>Fork things</h3>
+                <p>
+                  Use github to share things on the internet then change them. Make things better. Free software? But not as in beer.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="featured-list featured-list-bordered">
+              <li class="mb-5">
+                <div class="featured-list-icon">
+                  <span class="icon icon-medium"></span>
+                </div>
+
+                <h3>Write things</h3>
+                <p>
+                  Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
+                </p>
+              </li>
+
+              <li>
+                <div class="featured-list-icon">
+                  <span class="icon icon-twitter"></span>
+                </div>
+                <h3>Tweet things</h3>
+                <p>
+                  Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="featured-list featured-list-bordered">
+              <li class="mb-5">
+                <div class="featured-list-icon">
+                  <span class="icon icon-medium"></span>
+                </div>
+
+                <h3>Write things</h3>
+                <p>
+                  Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
+                </p>
+              </li>
+
+              <li>
+                <div class="featured-list-icon">
+                  <span class="icon icon-twitter"></span>
+                </div>
+                <h3>Tweet things</h3>
+                <p>
+                  Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <a href="https://www.f6s.com/traveltechcon/" class="btn btn-primary btn-lg real-big-button" target="pitch-competition">Apply to Pitch</a>
@@ -169,12 +246,11 @@ title: Travel Tech Con 2017
 
   <div class="container-fluid">
     <div class="row my-4">
-      <div class="col-sm-6">
+      <div class="col-md-4">
         <ul class="featured-list featured-list-bordered">
           <li class="mb-5">
             <div class="featured-list-icon">
               <span class="icon icon-dropbox"></span>
-              <span class="icon icon-trophy"></span>
             </div>
 
             <h3>Save things</h3>
@@ -194,7 +270,31 @@ title: Travel Tech Con 2017
           </li>
         </ul>
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-4">
+        <ul class="featured-list featured-list-bordered">
+          <li class="mb-5">
+            <div class="featured-list-icon">
+              <span class="icon icon-medium"></span>
+            </div>
+
+            <h3>Write things</h3>
+            <p>
+              Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
+            </p>
+          </li>
+
+          <li>
+            <div class="featured-list-icon">
+              <span class="icon icon-twitter"></span>
+            </div>
+            <h3>Tweet things</h3>
+            <p>
+              Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
         <ul class="featured-list featured-list-bordered">
           <li class="mb-5">
             <div class="featured-list-icon">
