@@ -35,6 +35,7 @@ schedule:
     map_url: https://goo.gl/maps/DszBuskr2oy
     target: 500startups
     style: success
+    registration: 12 pm
   - date: May 23
     event: Workshops
     venue: 500 Startups
@@ -42,6 +43,7 @@ schedule:
     map_url: https://goo.gl/maps/DszBuskr2oy
     target: 500startups
     style: info
+    registration: 8 am
   - date: May 24
     event: Conference Day
     venue: HOME on Treasure Island
@@ -49,6 +51,7 @@ schedule:
     map_url: https://goo.gl/maps/HNEADWELAG62
     target: homeonti
     style: primary
+    registration: 8 am
 judges:
   - name: Mike Coletta
     company: Phocuswright
@@ -163,6 +166,13 @@ judges:
               </span>
             </span>
           </p>
+          <p class="mt-4">
+            <span class="text-ribbon text-ribbon-{{ d.style }}">
+              <span>
+                Registration: {{ d.registration }}
+              </span>
+            </span>
+          </p>
         </div>
       {% endfor %}
     </div>
@@ -208,7 +218,9 @@ judges:
 
       <div class="container-fluid">
         <div class="row my-4 justify-content-center">
-          <p>We can help you get noticed, just like we helped <a style="text-decoration: underline;" href="https://beyondpricing.com/">Beyond Pricing</a> and <a style="text-decoration: underline;" href="https://helloscout.com/">Hello Scout</a>, <a href="https://www.traveltechcon.com/news/2016/11/20/congratulations-beyondpricing-and-hello-scout" style="text-decoration: underline;" target="ttc-success">our winners from 2016</a>.</p>
+          <div class="col-md-10">
+            <p class="text-center">We can help you get noticed, just like we helped <a href="https://www.traveltechcon.com/news/2016/11/20/congratulations-beyondpricing-and-hello-scout" style="text-decoration: underline;" target="ttc-success">our winners from 2016</a>.</p>
+          </div>
 
           <a href="https://beyondpricing.com/" class="col-md-4 my-4">
             <img src="img/beyond-pricing.jpg" alt="Beyond Pricing">
