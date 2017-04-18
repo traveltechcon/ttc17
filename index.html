@@ -50,12 +50,42 @@ schedule:
     target: homeonti
     style: primary
 judges:
+  - name: Mike Coletta
+    company: Phocuswright
+    url: http://www.phocuswright.com/
+    logo: pcw.jpg
+    headshot: mike.jpg
+    prize: Ticket to Phocuswright Battleground
+  - name: Bonny Simi
+    company: JetBlue Technology Ventures
+    url: http://www.jetblueventures.com/
+    logo: jtv.jpg
+    headshot: bonny.jpg
+    prize: Mentoring Session
   - name: Norm Rose
-    bio: Norm is great!
+    company: Travel Tech Consulting
     url: http://traveltechconsulting.com
+    logo: ttconsulting.jpg
+    headshot: norm.jpg
+    prize: Mentoring Session
+  - name: Gadi Bashvitz
+    company: Deem
+    url: http://deem.com
+    logo: deem.jpg
+    headshot: gadi.jpg
+    prize: Mentoring Session
   - name: Rom Hendler
-    bio: Rom is awesome!
-    url: http://innovel.il
+    company: Innovel
+    url: http://innovel.vc/
+    logo: innovel.jpg
+    headshot: rom.jpg
+    prize: Mentoring Session
+  - name: Nathan Bobbin
+    company: Travelport Labs
+    url: https://www.travelport.com/labs
+    logo: travelportlabs.jpg
+    headshot: nathan.jpg
+    prize: Mentoring Session
 ---
 
 <div class="stage" id="stage">
@@ -140,99 +170,32 @@ judges:
 
   <div class="block block-secondary text-center px-1 px-lg-5 ttc-block">
     <div class="py-4">
-      <h1 class="block-title"><span class="icon icon-trophy"></span><br>Pitch Competition</h1>
-      <h3>May 22</h3>
-      <h4><a href="https://goo.gl/maps/DszBuskr2oy" target="500startups">
-        500 Startups
-        814 Mission Street, 6th Floor
-        San Francisco
+      <h1 class="block-title"><span class="icon icon-trophy"></span><br>{{ page.schedule[0].event }}</h1>
+      <h3>{{ page.schedule[0].date }}</h3>
+      <h4><a href="{{ page.schedule[0].map_url }}" target="{{ page.schedule[0].target }}">
+        {{ page.schedule[0].venue }}
+        {{ page.schedule[0].address }}
       </a></h4>
     </div>
 
-    <p class="px-5">Watch 20+ startups divided into two cohorts (early and VC-backed startups) to pitch in front of a panel of esteemed industry experts. TTC aims to help startups navigate the travel industry and connect them to established travel companies, at the same time helping big travel companies to learn from startups.</p>
-    <p class="px-5">Win amazing prizes from our partners, including a free ticket to <a href="http://www.phocuswrightconference.com/Compete/Battleground">Phocuswright Battleground</a> and <a href="http://phocuswrightconference.com/">The Phocuswright Conference</a>, a prize worth $4,199.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="my-5">At Travel Tech Con Pitch competition 20 best travel startups, divided into two cohorts (early-stage and VC-backed), will pitch in front of a panel of esteemed industry experts in order to win valuable prizes, such as free ticket to <a href="http://www.phocuswrightconference.com/Compete/Battleground">Phocuswright Battleground</a> (worth $4,199), and other great prizes.</p>
+      </div>
+    </div>
 
-    <div class="py-4">
-      <h2>Judges</h2>
-
-      <ul>{% for judge in page.judges %}
-        <li>{{ judge.name }}: {{ judge.bio }}</li>{% endfor %}
-      </ul>
+    <div class="my-4">
+      <h1>Judges</h1>
 
       <div class="container-fluid">
         <div class="row my-4">
-          <div class="col-md-4">
-            <ul class="featured-list featured-list-bordered">
-              <li class="mb-5">
-                <div class="featured-list-icon">
-                  <span class="icon icon-dropbox"></span>
-                </div>
-
-                <h3>Save things</h3>
-                <p>
-                  Use dropbox to save things in the "cloud" because throwing things away is stressful and this way you don't have to.
-                </p>
-              </li>
-
-              <li>
-                <div class="featured-list-icon">
-                  <span class="icon icon-github"></span>
-                </div>
-                <h3>Fork things</h3>
-                <p>
-                  Use github to share things on the internet then change them. Make things better. Free software? But not as in beer.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="featured-list featured-list-bordered">
-              <li class="mb-5">
-                <div class="featured-list-icon">
-                  <span class="icon icon-medium"></span>
-                </div>
-
-                <h3>Write things</h3>
-                <p>
-                  Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
-                </p>
-              </li>
-
-              <li>
-                <div class="featured-list-icon">
-                  <span class="icon icon-twitter"></span>
-                </div>
-                <h3>Tweet things</h3>
-                <p>
-                  Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="featured-list featured-list-bordered">
-              <li class="mb-5">
-                <div class="featured-list-icon">
-                  <span class="icon icon-medium"></span>
-                </div>
-
-                <h3>Write things</h3>
-                <p>
-                  Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
-                </p>
-              </li>
-
-              <li>
-                <div class="featured-list-icon">
-                  <span class="icon icon-twitter"></span>
-                </div>
-                <h3>Tweet things</h3>
-                <p>
-                  Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
-                </p>
-              </li>
-            </ul>
-          </div>
+          {% for judge in page.judges %}
+            <a href="#" class="col-md-6 col-lg-4 my-4">
+              <img src="{{ judge.headshot }}" alt="">
+              <h3>{{ judge.name }}</h3>
+              <img src="{{ judge.url }}" alt="{{ judge.company }}">
+            </a>
+          {% endfor %}
         </div>
       </div>
     </div>
