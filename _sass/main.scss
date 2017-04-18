@@ -161,6 +161,24 @@ $gradient: rgba(#000, 0.65);
   background-attachment: fixed;
 }
 
+#pitch-competition-links {
+  .btn {
+    margin-bottom: 20px;
+  }
+  .link {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
+}
+
+#winners-2016 {
+  img {
+    border-radius: 4px;
+  }
+}
+
 #workshops {
   background-image:
     linear-gradient($gradient, $gradient),
