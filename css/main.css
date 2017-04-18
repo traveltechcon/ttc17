@@ -1,8 +1,27 @@
 body {
   letter-spacing: normal; }
 
+body, h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.btn, p, a {
+  font-weight: normal; }
+
 .btn-primary {
   color: #fff !important; }
+
+#site-header .block-foreground {
+  width: 100%; }
+
+#site-header .block-title {
+  font-size: 2.4em;
+  margin: 40px 0; }
+  @media (min-width: 576px) {
+    #site-header .block-title {
+      margin: 20px 0;
+      font-size: 3em; } }
+  @media (min-width: 768px) {
+    #site-header .block-title {
+      font-size: 3.8em; } }
 
 #video-background {
   background-image: url(../videos/1-shibuya.jpg);
@@ -30,10 +49,10 @@ body {
 
 .carousel .teaser {
   width: 100%;
-  height: 300px;
+  height: 260px;
   text-align: center; }
   .carousel .teaser h2 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     word-break: break-all;
     text-shadow: -2px -1px 0 #000, -4px -2px 0 #000, -6px -3px 0 #000, -8px -4px 0 #000, -9px -4px 0 #fff; }
@@ -42,16 +61,21 @@ body {
       font-size: 2em;
       color: #C0B8FF; }
   .carousel .teaser h4 {
-    font-size: 2em;
-    font-weight: normal;
+    font-size: 1.6em;
     margin: 20px 0; }
+  @media (min-width: 768px) {
+    .carousel .teaser {
+      height: 300px; }
+      .carousel .teaser h2 {
+        font-size: 3.6em; }
+      .carousel .teaser h4 {
+        font-size: 2em; } }
 
 .real-big-button {
   font-size: 2rem;
   padding: 1.25rem 4rem;
   -webkit-border-radius: .5rem;
-          border-radius: .5rem;
-  font-weight: normal; }
+          border-radius: .5rem; }
 
 #call-to-action p {
   font-size: 1.2em; }
@@ -71,6 +95,8 @@ body {
     text-align: justify; }
   .ttc-block a {
     color: inherit; }
+  .ttc-block h1, .ttc-block h2, .ttc-block h3, .ttc-block h4, .ttc-block p, .ttc-block a {
+    font-weight: normal; }
 
 #conference-agenda {
   background-image: url(../img/agenda-bg.jpg); }
@@ -79,4 +105,10 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/pitch-competition-bg.jpg);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/pitch-competition-bg.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/pitch-competition-bg.jpg);
+  background-attachment: fixed; }
+
+#workshops {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/workshops-bg.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/workshops-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/workshops-bg.jpg);
   background-attachment: fixed; }
