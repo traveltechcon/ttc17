@@ -23,6 +23,14 @@ body, h1, h2, h3, h4, h5, h6,
     #site-header .block-title {
       font-size: 3.8em; } }
 
+#site-header .navbar-brand {
+  margin-right: 0 !important;
+  text-align: center; }
+  @media (min-width: 768px) {
+    #site-header .navbar-brand {
+      margin-right: auto !important;
+      text-align: left; } }
+
 #video-background {
   background-image: url(../videos/1-shibuya.jpg);
   background-size: cover;
