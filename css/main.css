@@ -1,6 +1,9 @@
 body {
   letter-spacing: normal; }
 
+.btn-primary {
+  color: #fff !important; }
+
 #video-background {
   background-image: url(../videos/1-shibuya.jpg);
   background-size: cover;
@@ -58,16 +61,22 @@ body {
     width: 200px;
     height: 200px; } }
 
-#conference-agenda {
-  background-image: url(../img/agenda-bg.jpg);
+.ttc-block {
   background-position: 50% 0%;
   background-repeat: no-repeat;
-  background-size: cover; }
-  #conference-agenda p {
-    font-size: 1.4em; }
-  #conference-agenda a {
+  background-size: cover;
+  text-rendering: optimizeLegibility; }
+  .ttc-block p {
+    font-size: 1.4em;
+    text-align: justify; }
+  .ttc-block a {
     color: inherit; }
 
-.ttc-block p {
-  font-size: 1.6em;
-  text-align: justify; }
+#conference-agenda {
+  background-image: url(../img/agenda-bg.jpg); }
+
+#pitch-competition {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/pitch-competition-bg.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/pitch-competition-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/pitch-competition-bg.jpg);
+  background-attachment: fixed; }
