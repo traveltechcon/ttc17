@@ -1,3 +1,5 @@
+$light-purple: #C0B8FF;
+
 body {
   letter-spacing: normal;
 }
@@ -90,7 +92,7 @@ body, h1, h2, h3, h4, h5, h6,
       span {
         display: block;
         font-size: 2em;
-        color: #C0B8FF;
+        color: $light-purple;
       }
     }
 
@@ -138,6 +140,7 @@ body, h1, h2, h3, h4, h5, h6,
   background-repeat: no-repeat;
   background-size: cover;
   text-rendering: optimizeLegibility;
+  border-bottom: 3px solid $light-purple;
 
   p {
     font-size: 1.4em;
@@ -190,9 +193,9 @@ $gradient: rgba(#000, 0.65);
   background-attachment: fixed;
 }
 
-conference-day {
+#conference-day {
   background-image:
     linear-gradient($gradient, $gradient),
-    url(../img/bg/workshops.jpg);
+    url(../img/bg/conference-day.jpg);
   background-attachment: fixed;
 }

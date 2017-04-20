@@ -263,7 +263,7 @@ speakers:
       <h1>Judges</h1>
 
       <div class="container-fluid">
-        <div class="row my-4">
+        <div class="row my-4 presenters">
           {% for judge in page.judges %}
             <a href="#" class="col-md-6 col-lg-4 my-4">
               <img src="img/presenters/{{ judge.headshot }}.jpg" alt="">
@@ -330,7 +330,7 @@ speakers:
       <h1>Presenters</h1>
 
       <div class="container-fluid">
-        <div class="row my-4">
+        <div class="row my-4 presenters">
           {% for presenter in page.workshop_presenters.startup_track %}
             <a href="#" class="col-md-6 col-lg-4 my-4">
               <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
@@ -359,21 +359,54 @@ speakers:
 
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
-        <h2>10 Workshops</h2>
+        <h2>20 Top Industry Speakers</h2>
         <h2>Startup Track + Developer Track</h2>
+        <h2>Exhibition Space</h2>
+        <h2>Afterparty With DJ Justin Paul</h2>
         <div class="my-4">
-          <p class="text-center">Workshop is a 1.5-hour long interactive session with the speaker. You have a unique opportunity to learn from the industry experts and connect with them.</p>
-          <p class="text-center">Each track is limited to maximum 30 attendees.</p>
+          <p class="text-center">The main conference day is where it's at. Connect with 400 attendees from top travel industry companies and startups, learn from business and technology experts, talk about real problems and how to solve them.</p>
         </div>
       </div>
     </div>
 
     <div class="my-4">
-      <h1>Presenters</h1>
+      <h1>Keynote Speakers</h1>
 
       <div class="container-fluid">
-        <div class="row my-4">
-          {% for presenter in page.workshop_presenters.startup_track %}
+        <div class="row my-4 presenters">
+          {% for presenter in page.speakers.keynote %}
+            <a href="#" class="col-md-6 col-lg-4 my-4">
+              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
+              <h3>{{ presenter.name }}</h3>
+              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="my-4">
+      <h1>Startup Track</h1>
+
+      <div class="container-fluid">
+        <div class="row my-4 presenters">
+          {% for presenter in page.speakers.startup_track %}
+            <a href="#" class="col-md-6 col-lg-4 my-4">
+              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
+              <h3>{{ presenter.name }}</h3>
+              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="my-4">
+      <h1>Developer Track</h1>
+
+      <div class="container-fluid">
+        <div class="row my-4 presenters">
+          {% for presenter in page.speakers.developer_track %}
             <a href="#" class="col-md-6 col-lg-4 my-4">
               <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
               <h3>{{ presenter.name }}</h3>

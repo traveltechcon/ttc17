@@ -101,7 +101,8 @@ body, h1, h2, h3, h4, h5, h6,
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  border-bottom: 3px solid #C0B8FF; }
   .ttc-block p {
     font-size: 1.4em;
     text-align: justify; }
@@ -138,8 +139,8 @@ body, h1, h2, h3, h4, h5, h6,
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
   background-attachment: fixed; }
 
-conference-day {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/workshops.jpg);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
+#conference-day {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/conference-day.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/conference-day.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/conference-day.jpg);
   background-attachment: fixed; }
