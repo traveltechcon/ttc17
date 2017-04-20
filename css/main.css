@@ -111,12 +111,12 @@ body, h1, h2, h3, h4, h5, h6,
     font-weight: normal; }
 
 #conference-agenda {
-  background-image: url(../img/agenda-bg.jpg); }
+  background-image: url(../img/bg/agenda.jpg); }
 
 #pitch-competition {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/pitch-competition-bg.jpg);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/pitch-competition-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/pitch-competition-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/pitch-competition.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/pitch-competition.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/pitch-competition.jpg);
   background-attachment: fixed; }
 
 #pitch-competition-links .btn {
@@ -133,7 +133,13 @@ body, h1, h2, h3, h4, h5, h6,
           border-radius: 4px; }
 
 #workshops {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/workshops-bg.jpg);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/workshops-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/workshops-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/workshops.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
+  background-attachment: fixed; }
+
+conference-day {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/workshops.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
   background-attachment: fixed; }

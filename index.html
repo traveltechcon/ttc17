@@ -57,38 +57,99 @@ judges:
     company: Phocuswright
     url: http://www.phocuswright.com/
     logo: pcw.jpg
-    headshot: mike.jpg
+    headshot: mike-coletta
     prize: Ticket to Phocuswright Battleground
   - name: Bonny Simi
     company: JetBlue Technology Ventures
     url: http://www.jetblueventures.com/
     logo: jtv.jpg
-    headshot: bonny.jpg
+    headshot: bonny-simi
     prize: Mentoring Session
   - name: Norm Rose
     company: Travel Tech Consulting
     url: http://traveltechconsulting.com
-    logo: ttconsulting.jpg
-    headshot: norm.jpg
+    logo: ttconsulting
+    headshot: norm-rose
     prize: Mentoring Session
   - name: Gadi Bashvitz
     company: Deem
     url: http://deem.com
     logo: deem.jpg
-    headshot: gadi.jpg
+    headshot: gadi-bashvitz
     prize: Mentoring Session
   - name: Rom Hendler
     company: Innovel
     url: http://innovel.vc/
     logo: innovel.jpg
-    headshot: rom.jpg
+    headshot: rom-hendler
     prize: Mentoring Session
   - name: Nathan Bobbin
     company: Travelport Labs
     url: https://www.travelport.com/labs
-    logo: travelportlabs.jpg
-    headshot: nathan.jpg
+    logo: travelportlabs
+    headshot: nathan-bobbin
     prize: Mentoring Session
+workshop_presenters:
+  startup_track:
+    - name: William Niejadlik
+      company: Niejadlik Consulting
+      headshot: william-niejadlik
+    - name: Dave Rubin
+      company: Greystone Hotels and Hospitality
+      headshot: dave-rubin
+    - name: Christina Heggie
+      company: JetBlue Technology Ventures
+      headshot: christina-heggie
+  developer_track:
+speakers:
+  keynote:
+    - name: Maksim Izmaylov
+      company: Travel Tech Con
+      headshot: maksim-izmaylov
+    - name: Gillian Morris
+      company: Hitlist
+      headshot: gillian-morris
+    - name: Adam Goldstein
+      company: Hipmunk
+      headshot: adam-goldstein
+    - name: Sarah Kennedy
+      company: Sabre
+      headshot: sarah-kennedy
+    - name: Tahnee Perry
+      company: Deem
+      headshot: tahnee-perry
+  startup_track:
+    - name: Norm Rose
+      company: Travel Tech Consulting
+      headshot: norm-rose
+    - name: Emre Mangir
+      company: Mozio
+      headshot: emre-mangir
+    - name: Jessica Coane
+      company: PEX+
+      headshot: jessica-coane
+    - name: Alex Sumin
+      company: Claim Compass
+      headshot: alex-sumin
+    - name: Eric Wiesen
+      company: Bullpen Capital
+      headshot: eric-wiesen
+    - name: Christopher Hemmeter
+      company: Thayer Ventures
+      headshot: christopher-hemmeter
+  developer_track:
+    - name: David Low
+      company: Skyscanner
+      headshot: david-low
+    - name: Christine Kim
+      company: Uber
+      headshot: christine-kim
+    - name: Matt Hubert
+      company: Bitmatica
+      headshot: matt-hubert
+    - name: Nicolas Berger
+      company: Roomstorm
+      headshot: nicolas-berger
 ---
 
 <div class="stage" id="stage">
@@ -139,7 +200,7 @@ judges:
 
   <div class="block block-secondary" id="industry-quote">
     <blockquote class="pull-quote">
-      <img class="rounded-circle" src="img/norm-rose.jpg">
+      <img class="rounded-circle" src="img/presenters/norm-rose.jpg">
       <p>
         “{{ page.endorsement_quote }}”
       </p>
@@ -178,6 +239,7 @@ judges:
     </div>
   </div>
 
+  <!-- Pitch Competition -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="pitch-competition">
     <div class="py-4">
       <h1 class="block-title"><span class="icon icon-trophy"></span><br>{{ page.schedule[0].event }}</h1>
@@ -204,7 +266,7 @@ judges:
         <div class="row my-4">
           {% for judge in page.judges %}
             <a href="#" class="col-md-6 col-lg-4 my-4">
-              <img src="{{ judge.headshot }}" alt="">
+              <img src="img/presenters/{{ judge.headshot }}.jpg" alt="">
               <h3>{{ judge.name }}</h3>
               <img src="{{ judge.url }}" alt="{{ judge.company }}">
             </a>
@@ -241,6 +303,7 @@ judges:
     </div>
   </div>
 
+  <!-- Workshops -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="workshops">
     <div class="py-4">
       <h1 class="block-title"><span class="icon icon-cog"></span><br>{{ page.schedule[1].event }}</h1>
@@ -255,8 +318,11 @@ judges:
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
         <h2>10 Workshops</h2>
-        <h2>Business Track + Developer Track</h2>
-        <p class="my-5">Wor</p>
+        <h2>Startup Track + Developer Track</h2>
+        <div class="my-4">
+          <p class="text-center">Workshop is a 1.5-hour long interactive session with the speaker. You have a unique opportunity to learn from the industry experts and connect with them.</p>
+          <p class="text-center">Each track is limited to maximum 30 attendees.</p>
+        </div>
       </div>
     </div>
 
@@ -265,11 +331,53 @@ judges:
 
       <div class="container-fluid">
         <div class="row my-4">
-          {% for judge in page.judges %}
+          {% for presenter in page.workshop_presenters.startup_track %}
             <a href="#" class="col-md-6 col-lg-4 my-4">
-              <img src="{{ judge.headshot }}" alt="">
-              <h3>{{ judge.name }}</h3>
-              <img src="{{ judge.url }}" alt="{{ judge.company }}">
+              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
+              <h3>{{ presenter.name }}</h3>
+              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <a href="https://www.eventbrite.com/e/travel-tech-con-2017-tickets-30070691247" class="btn btn-primary btn-lg real-big-button" target="ttc17-tickets">{{ page.tickets_link }}</a>
+  </div>
+
+  <!-- Conference Day -->
+  <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="conference-day">
+    <div class="py-4">
+      <h1 class="block-title"><span class="icon icon-cog"></span><br>{{ page.schedule[2].event }}</h1>
+      <h3>{{ page.schedule[2].date }}</h3>
+      <h4><a href="{{ page.schedule[2].map_url }}" target="{{ page.schedule[2].target }}">
+        <span class="icon icon-map"></span>
+        {{ page.schedule[2].venue }}
+        {{ page.schedule[2].address }}
+      </a></h4>
+    </div>
+
+    <div class="row justify-content-center my-5">
+      <div class="col-md-8">
+        <h2>10 Workshops</h2>
+        <h2>Startup Track + Developer Track</h2>
+        <div class="my-4">
+          <p class="text-center">Workshop is a 1.5-hour long interactive session with the speaker. You have a unique opportunity to learn from the industry experts and connect with them.</p>
+          <p class="text-center">Each track is limited to maximum 30 attendees.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-4">
+      <h1>Presenters</h1>
+
+      <div class="container-fluid">
+        <div class="row my-4">
+          {% for presenter in page.workshop_presenters.startup_track %}
+            <a href="#" class="col-md-6 col-lg-4 my-4">
+              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
+              <h3>{{ presenter.name }}</h3>
+              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
             </a>
           {% endfor %}
         </div>

@@ -154,14 +154,14 @@ body, h1, h2, h3, h4, h5, h6,
 }
 
 #conference-agenda {
-  background-image: url(../img/agenda-bg.jpg);
+  background-image: url(../img/bg/agenda.jpg);
 }
 
 $gradient: rgba(#000, 0.65);
 #pitch-competition {
   background-image:
     linear-gradient($gradient, $gradient),
-    url(../img/pitch-competition-bg.jpg);
+    url(../img/bg/pitch-competition.jpg);
   background-attachment: fixed;
 }
 
@@ -186,6 +186,13 @@ $gradient: rgba(#000, 0.65);
 #workshops {
   background-image:
     linear-gradient($gradient, $gradient),
-    url(../img/workshops-bg.jpg);
+    url(../img/bg/workshops.jpg);
+  background-attachment: fixed;
+}
+
+conference-day {
+  background-image:
+    linear-gradient($gradient, $gradient),
+    url(../img/bg/workshops.jpg);
   background-attachment: fixed;
 }
