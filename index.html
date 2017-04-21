@@ -105,9 +105,6 @@ workshop_presenters:
   developer_track:
 speakers:
   keynote:
-    - name: Maksim Izmaylov
-      company: Travel Tech Con
-      headshot: maksim-izmaylov
     - name: Gillian Morris
       company: Hitlist
       headshot: gillian-morris
@@ -120,6 +117,9 @@ speakers:
     - name: Tahnee Perry
       company: Deem
       headshot: tahnee-perry
+    - name: Maksim Izmaylov
+      company: Travel Tech Con
+      headshot: maksim-izmaylov
   startup_track:
     - name: Norm Rose
       company: Travel Tech Consulting
@@ -243,15 +243,7 @@ speakers:
 
   <!-- Pitch Competition -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="pitch-competition">
-    <div class="py-4">
-      <h1 class="block-title"><span class="icon icon-trophy"></span><br>{{ page.schedule[0].event }}</h1>
-      <h3>{{ page.schedule[0].date }}</h3>
-      <h4><a href="{{ page.schedule[0].map_url }}" target="{{ page.schedule[0].target }}">
-        <span class="icon icon-map"></span>
-        {{ page.schedule[0].venue }}
-        {{ page.schedule[0].address }}
-      </a></h4>
-    </div>
+    {% include block-header.html day=page.schedule[0] %}
 
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
@@ -267,11 +259,7 @@ speakers:
       <div class="container-fluid">
         <div class="row my-4 presenters">
           {% for judge in page.judges %}
-            <a href="#" class="col-md-6 col-lg-4 my-4">
-              <img src="img/presenters/{{ judge.headshot }}.jpg" alt="">
-              <h3>{{ judge.name }}</h3>
-              <img src="{{ judge.url }}" alt="{{ judge.company }}">
-            </a>
+            {% include presenter.html presenter=judge %}
           {% endfor %}
         </div>
       </div>
@@ -307,15 +295,7 @@ speakers:
 
   <!-- Workshops -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="workshops">
-    <div class="py-4">
-      <h1 class="block-title"><span class="icon icon-cog"></span><br>{{ page.schedule[1].event }}</h1>
-      <h3>{{ page.schedule[1].date }}</h3>
-      <h4><a href="{{ page.schedule[1].map_url }}" target="{{ page.schedule[1].target }}">
-        <span class="icon icon-map"></span>
-        {{ page.schedule[1].venue }}
-        {{ page.schedule[1].address }}
-      </a></h4>
-    </div>
+    {% include block-header.html day=page.schedule[1] %}
 
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
@@ -351,15 +331,7 @@ speakers:
 
   <!-- Conference Day -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="conference-day">
-    <div class="py-4">
-      <h1 class="block-title"><span class="icon icon-cog"></span><br>{{ page.schedule[2].event }}</h1>
-      <h3>{{ page.schedule[2].date }}</h3>
-      <h4><a href="{{ page.schedule[2].map_url }}" target="{{ page.schedule[2].target }}">
-        <span class="icon icon-map"></span>
-        {{ page.schedule[2].venue }}
-        {{ page.schedule[2].address }}
-      </a></h4>
-    </div>
+    {% include block-header.html day=page.schedule[2] %}
 
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
@@ -379,11 +351,7 @@ speakers:
       <div class="container-fluid">
         <div class="row my-4 presenters">
           {% for presenter in page.speakers.keynote %}
-            <a href="#" class="col-md-6 col-lg-4 my-4">
-              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
-              <h3>{{ presenter.name }}</h3>
-              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
-            </a>
+            {% include presenter.html presenter=presenter %}
           {% endfor %}
         </div>
       </div>
@@ -395,11 +363,7 @@ speakers:
       <div class="container-fluid">
         <div class="row my-4 presenters">
           {% for presenter in page.speakers.startup_track %}
-            <a href="#" class="col-md-6 col-lg-4 my-4">
-              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
-              <h3>{{ presenter.name }}</h3>
-              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
-            </a>
+            {% include presenter.html presenter=presenter %}
           {% endfor %}
         </div>
       </div>
@@ -411,11 +375,7 @@ speakers:
       <div class="container-fluid">
         <div class="row my-4 presenters">
           {% for presenter in page.speakers.developer_track %}
-            <a href="#" class="col-md-6 col-lg-4 my-4">
-              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
-              <h3>{{ presenter.name }}</h3>
-              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
-            </a>
+            {% include presenter.html presenter=presenter %}
           {% endfor %}
         </div>
       </div>
