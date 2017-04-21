@@ -1,5 +1,7 @@
 <div class="col-md-6 col-lg-4 my-4">
-  <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
+  <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="{{ presenter.name }}" title="{{ presenter.name }}" class="headshot">
   <h3>{{ presenter.name }}</h3>
-  <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
+  <a href="{{ presenter.company_url }}" target="_blank">
+    <img src="{{ presenter.company_logo }}" alt="{{ presenter.company }}">
+  </a>
 </div>

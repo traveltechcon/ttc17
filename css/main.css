@@ -144,3 +144,7 @@ body, h1, h2, h3, h4, h5, h6,
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/conference-day.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/conference-day.jpg);
   background-attachment: fixed; }
+
+.presenters .headshot {
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }

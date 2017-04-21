@@ -199,3 +199,9 @@ $gradient: rgba(#000, 0.65);
     url(../img/bg/conference-day.jpg);
   background-attachment: fixed;
 }
+
+.presenters {
+  .headshot {
+    border-radius: 50%;
+  }
+}
