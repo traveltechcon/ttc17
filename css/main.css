@@ -146,5 +146,10 @@ body, h1, h2, h3, h4, h5, h6,
   background-attachment: fixed; }
 
 .presenters .headshot {
+  width: 250px;
+  height: 250px;
   -webkit-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+  border: 10px solid #C0B8FF;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }

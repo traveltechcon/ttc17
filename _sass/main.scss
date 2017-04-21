@@ -1,4 +1,9 @@
 $light-purple: #C0B8FF;
+$cool-shadow: -2px -1px 0 #000,
+  -4px -2px 0 #000,
+  -6px -3px 0 #000,
+  -8px -4px 0 #000,
+  -9px -4px 0 #fff;
 
 body {
   letter-spacing: normal;
@@ -82,12 +87,7 @@ body, h1, h2, h3, h4, h5, h6,
       font-weight: bold;
       word-break: break-all;
 
-      text-shadow:
-        -2px -1px 0 #000,
-        -4px -2px 0 #000,
-        -6px -3px 0 #000,
-        -8px -4px 0 #000,
-        -9px -4px 0 #fff;
+      text-shadow: $cool-shadow;
 
       span {
         display: block;
@@ -202,6 +202,10 @@ $gradient: rgba(#000, 0.65);
 
 .presenters {
   .headshot {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    border: 10px solid $light-purple;
+    box-shadow: 0 5px 5px rgba(#000, 0.5);
   }
 }

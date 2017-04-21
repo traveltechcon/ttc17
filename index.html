@@ -63,13 +63,13 @@ judges:
   - name: Mike Coletta
     company: Phocuswright
     company_url: http://www.phocuswright.com/
-    logo: pcw.jpg
+    logo: pcw
     headshot: mike-coletta
     prize: Ticket to Phocuswright Battleground
   - name: Bonny Simi
     company: JetBlue Technology Ventures
     company_url: http://www.jetblueventures.com/
-    logo: jtv.jpg
+    logo: jtv
     headshot: bonny-simi
     prize: Mentoring Session
   - name: Norm Rose
@@ -81,19 +81,18 @@ judges:
   - name: Gadi Bashvitz
     company: Deem
     company_url: http://deem.com
-    logo: deem.jpg
+    logo: deem
     headshot: gadi-bashvitz
     prize: Mentoring Session
   - name: Rom Hendler
     company: Innovel
     company_url: http://innovel.vc/
-    logo: innovel.jpg
+    logo: innovel
     headshot: rom-hendler
     prize: Mentoring Session
   - name: Nathan Bobbin
     company: Travelport Labs
     company_url: https://www.travelport.com/labs
-    logo: travelportlabs
     headshot: nathan-bobbin
     prize: Mentoring Session
 workshop_presenters:
@@ -160,6 +159,19 @@ conference_day:
       - name: Nicolas Berger
         company: Roomstorm
         headshot: nicolas-berger
+sponsors:
+  - name: 500 Startups
+    url: https://500.co/
+    logo: 500-startups
+  - name: Phocuswright
+    url: http://www.phocuswrightconference.com/
+    logo: phocuswright
+  - name: Plug and Play Tech Center
+    url: http://plugandplaytechcenter.com/
+    logo: pp
+  - name: Travelport Labs
+    url: https://www.travelport.com/labs
+    logo: travelport
 ---
 
 <div class="stage" id="stage">
@@ -265,7 +277,7 @@ conference_day:
       <h1>Judges</h1>
 
       <div class="container-fluid">
-        <div class="row my-4 presenters">
+        <div class="row my-4 justify-content-center presenters">
           {% for judge in page.judges %}
             {% include presenter.html presenter=judge %}
           {% endfor %}
@@ -283,10 +295,10 @@ conference_day:
           </div>
 
           <a href="https://beyondpricing.com/" class="col-md-4 my-4">
-            <img src="img/beyond-pricing.jpg" alt="Beyond Pricing">
+            <img src="img/companies/beyond-pricing.jpg" alt="Beyond Pricing">
           </a>
           <a href="http://helloscout.com/" class="col-md-4 my-4">
-            <img src="img/hello-scout.jpg" alt="Hello Scout">
+            <img src="img/companies/hello-scout.jpg" alt="Hello Scout">
           </a>
         </div>
       </div>
@@ -320,7 +332,7 @@ conference_day:
       <h1>Presenters</h1>
 
       <div class="container-fluid">
-        <div class="row my-4 presenters">
+        <div class="row my-4 justify-content-center presenters">
           {% for presenter in page.workshop_presenters.startup_track %}
             {% include presenter.html presenter=presenter %}
           {% endfor %}
@@ -358,84 +370,25 @@ conference_day:
     <a href="https://ttc17.typeform.com/to/u1aRbz" class="btn btn-primary my-4" target="propose-talk">Propose a Talk</a>
   </div>
 
-  <div class="block block-secondary">
-    <h1 class="block-title">Sponsors</h1>
-  </div>
+  <div class="block block-secondary text-center px-5 ttc-block" id="sponsors">
+    <div class="py-4">
+      <h1 class="block-title">Sponsors</h1>
+    </div>
 
-  <div class="container-fluid">
-    <div class="row my-4">
-      <div class="col-md-4">
-        <ul class="featured-list featured-list-bordered">
-          <li class="mb-5">
-            <div class="featured-list-icon">
-              <span class="icon icon-dropbox"></span>
-            </div>
+    <h2 class="text-center">
+      <a href="http://www.jetblueventures.com/"><img src="img/companies/jetblue.jpg" alt="JetBlue Technology Ventures"></a>
+    </h2>
 
-            <h3>Save things</h3>
-            <p>
-              Use dropbox to save things in the "cloud" because throwing things away is stressful and this way you don't have to.
-            </p>
+    <div class="container-fluid">
+      <ul class="row list-unstyled justify-content-center my-4">
+        {% for sponsor in page.sponsors %}
+          <li class="col-3 my-4">
+            <a href="{{ sponsor.url }}" target="_blank">
+              <img src="img/companies/{{ sponsor.logo }}.jpg" alt="{{ sponsor.name }}">
+            </a>
           </li>
-
-          <li>
-            <div class="featured-list-icon">
-              <span class="icon icon-github"></span>
-            </div>
-            <h3>Fork things</h3>
-            <p>
-              Use github to share things on the internet then change them. Make things better. Free software? But not as in beer.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul class="featured-list featured-list-bordered">
-          <li class="mb-5">
-            <div class="featured-list-icon">
-              <span class="icon icon-medium"></span>
-            </div>
-
-            <h3>Write things</h3>
-            <p>
-              Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
-            </p>
-          </li>
-
-          <li>
-            <div class="featured-list-icon">
-              <span class="icon icon-twitter"></span>
-            </div>
-            <h3>Tweet things</h3>
-            <p>
-              Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul class="featured-list featured-list-bordered">
-          <li class="mb-5">
-            <div class="featured-list-icon">
-              <span class="icon icon-medium"></span>
-            </div>
-
-            <h3>Write things</h3>
-            <p>
-              Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
-            </p>
-          </li>
-
-          <li>
-            <div class="featured-list-icon">
-              <span class="icon icon-twitter"></span>
-            </div>
-            <h3>Tweet things</h3>
-            <p>
-              Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
-            </p>
-          </li>
-        </ul>
-      </div>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 
