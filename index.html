@@ -37,6 +37,7 @@ schedule:
     map_url: https://goo.gl/maps/DszBuskr2oy
     target: 500startups
     style: success
+    icon: icon-trophy
     registration: 12 pm
   - date: May 23
     event: Workshops
@@ -45,6 +46,7 @@ schedule:
     map_url: https://goo.gl/maps/DszBuskr2oy
     target: 500startups
     style: info
+    icon: icon-laptop
     registration: 8 am
   - date: May 24
     event: Conference Day
@@ -53,6 +55,7 @@ schedule:
     map_url: https://goo.gl/maps/HNEADWELAG62
     target: homeonti
     style: primary
+    icon: icon-modern-mic
     registration: 8 am
 judges:
   - name: Mike Coletta
@@ -103,55 +106,58 @@ workshop_presenters:
       company: JetBlue Technology Ventures
       headshot: christina-heggie
   developer_track:
-speakers:
-  keynote:
-    - name: Gillian Morris
-      company: Hitlist
-      headshot: gillian-morris
-    - name: Adam Goldstein
-      company: Hipmunk
-      headshot: adam-goldstein
-    - name: Sarah Kennedy
-      company: Sabre
-      headshot: sarah-kennedy
-    - name: Tahnee Perry
-      company: Deem
-      headshot: tahnee-perry
-    - name: Maksim Izmaylov
-      company: Travel Tech Con
-      headshot: maksim-izmaylov
-  startup_track:
-    - name: Norm Rose
-      company: Travel Tech Consulting
-      headshot: norm-rose
-    - name: Emre Mangir
-      company: Mozio
-      headshot: emre-mangir
-    - name: Jessica Coane
-      company: PEX+
-      headshot: jessica-coane
-    - name: Alex Sumin
-      company: Claim Compass
-      headshot: alex-sumin
-    - name: Eric Wiesen
-      company: Bullpen Capital
-      headshot: eric-wiesen
-    - name: Christopher Hemmeter
-      company: Thayer Ventures
-      headshot: christopher-hemmeter
-  developer_track:
-    - name: David Low
-      company: Skyscanner
-      headshot: david-low
-    - name: Christine Kim
-      company: Uber
-      headshot: christine-kim
-    - name: Matt Hubert
-      company: Bitmatica
-      headshot: matt-hubert
-    - name: Nicolas Berger
-      company: Roomstorm
-      headshot: nicolas-berger
+conference_day:
+  - title: Keynote Speakers
+    speakers:
+      - name: Gillian Morris
+        company: Hitlist
+        headshot: gillian-morris
+      - name: Adam Goldstein
+        company: Hipmunk
+        headshot: adam-goldstein
+      - name: Sarah Kennedy
+        company: Sabre
+        headshot: sarah-kennedy
+      - name: Tahnee Perry
+        company: Deem
+        headshot: tahnee-perry
+      - name: Maksim Izmaylov
+        company: Travel Tech Con
+        headshot: maksim-izmaylov
+  - title: Startup Track
+    speakers:
+      - name: Norm Rose
+        company: Travel Tech Consulting
+        headshot: norm-rose
+      - name: Emre Mangir
+        company: Mozio
+        headshot: emre-mangir
+      - name: Jessica Coane
+        company: PEX+
+        headshot: jessica-coane
+      - name: Alex Sumin
+        company: Claim Compass
+        headshot: alex-sumin
+      - name: Eric Wiesen
+        company: Bullpen Capital
+        headshot: eric-wiesen
+      - name: Christopher Hemmeter
+        company: Thayer Ventures
+        headshot: christopher-hemmeter
+  - title: Developer Track
+    speakers:
+      - name: David Low
+        company: Skyscanner
+        headshot: david-low
+      - name: Christine Kim
+        company: Uber
+        headshot: christine-kim
+      - name: Matt Hubert
+        company: Bitmatica
+        headshot: matt-hubert
+      - name: Nicolas Berger
+        company: Roomstorm
+        headshot: nicolas-berger
 ---
 
 <div class="stage" id="stage">
@@ -243,7 +249,7 @@ speakers:
 
   <!-- Pitch Competition -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="pitch-competition">
-    {% include block-header.html day=page.schedule[0] %}
+    {% include block-header.html schedule=page.schedule index=0 %}
 
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
@@ -295,7 +301,7 @@ speakers:
 
   <!-- Workshops -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="workshops">
-    {% include block-header.html day=page.schedule[1] %}
+    {% include block-header.html schedule=page.schedule index=1 %}
 
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
@@ -314,11 +320,7 @@ speakers:
       <div class="container-fluid">
         <div class="row my-4 presenters">
           {% for presenter in page.workshop_presenters.startup_track %}
-            <a href="#" class="col-md-6 col-lg-4 my-4">
-              <img src="img/presenters/{{ presenter.headshot }}.jpg" alt="">
-              <h3>{{ presenter.name }}</h3>
-              <img src="{{ presenter.url }}" alt="{{ presenter.company }}">
-            </a>
+            {% include presenter.html presenter=presenter %}
           {% endfor %}
         </div>
       </div>
@@ -331,7 +333,7 @@ speakers:
 
   <!-- Conference Day -->
   <div class="block block-secondary block-inverse text-center px-5 ttc-block" id="conference-day">
-    {% include block-header.html day=page.schedule[2] %}
+    {% include block-header.html schedule=page.schedule index=2 %}
 
     <div class="row justify-content-center my-5">
       <div class="col-md-8">
@@ -345,41 +347,9 @@ speakers:
       </div>
     </div>
 
-    <div class="my-4">
-      <h1>Keynote Speakers</h1>
-
-      <div class="container-fluid">
-        <div class="row my-4 presenters">
-          {% for presenter in page.speakers.keynote %}
-            {% include presenter.html presenter=presenter %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
-    <div class="my-4">
-      <h1>Startup Track</h1>
-
-      <div class="container-fluid">
-        <div class="row my-4 presenters">
-          {% for presenter in page.speakers.startup_track %}
-            {% include presenter.html presenter=presenter %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
-    <div class="my-4">
-      <h1>Developer Track</h1>
-
-      <div class="container-fluid">
-        <div class="row my-4 presenters">
-          {% for presenter in page.speakers.developer_track %}
-            {% include presenter.html presenter=presenter %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
+    {% for track in page.conference_day %}
+      {% include conference-day-track.html track=track %}
+    {% endfor %}
 
     <a href="https://www.eventbrite.com/e/travel-tech-con-2017-tickets-30070691247" class="btn btn-primary btn-lg real-big-button" target="ttc17-tickets">{{ page.tickets_link }}</a>
     <br>

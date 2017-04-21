@@ -1,0 +1,11 @@
+<div class="my-4">
+  <h1>{{ track.title }}</h1>
+
+  <div class="container-fluid">
+    <div class="row my-4 presenters">
+      {% for presenter in track.speakers %}
+        {% include presenter.html presenter=presenter %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

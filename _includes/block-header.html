@@ -1,9 +1,11 @@
 <div class="py-4">
-  <h1 class="block-title"><span class="icon icon-modern-mic"></span><br>{{ day.event }}</h1>
-  <h3>{{ day.date }}</h3>
+  <h1 class="block-title">
+    <span class="icon {{ include.schedule[include.index].icon }}"></span><br>{{ include.schedule[include.index].event }}
+  </h1>
+  <h3>{{ include.schedule[include.index].date }}</h3>
   <h4><a href="{{ page.schedule[2].map_url }}" target="{{ page.schedule[2].target }}">
     <span class="icon icon-map"></span>
-    {{ day.venue }}
-    {{ day.address }}
+    {{ include.schedule[include.index].venue }}
+    {{ include.schedule[include.index].address }}
   </a></h4>
 </div>
