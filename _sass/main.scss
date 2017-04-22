@@ -156,11 +156,13 @@ body, h1, h2, h3, h4, h5, h6,
   }
 }
 
+$gradient: rgba(#000, 0.65);
 #conference-agenda {
-  background-image: url(../img/bg/agenda.jpg);
+  background-image:
+    linear-gradient($gradient, $gradient),
+    url(../img/bg/agenda.jpg);
 }
 
-$gradient: rgba(#000, 0.65);
 #pitch-competition {
   background-image:
     linear-gradient($gradient, $gradient),

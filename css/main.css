@@ -112,7 +112,9 @@ body, h1, h2, h3, h4, h5, h6,
     font-weight: normal; }
 
 #conference-agenda {
-  background-image: url(../img/bg/agenda.jpg); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/agenda.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/agenda.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/agenda.jpg); }
 
 #pitch-competition {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/pitch-competition.jpg);
