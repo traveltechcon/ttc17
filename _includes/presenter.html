@@ -16,4 +16,18 @@
   {% if include.presenter.talk_title %}
     <h5>{{ include.presenter.talk_title }}</h5>
   {% endif %}
+  <div class="my-4 text-center social">
+    {% if include.presenter.li %}
+      <a href="{{ include.presenter.li }}" target="_blank"><span class="icon icon-linkedin"></span></h5>
+    {% endif %}
+    {% if include.presenter.tw %}
+      <a href="{{ include.presenter.tw }}" target="_blank"><span class="icon icon-twitter"></span></h5>
+    {% endif %}
+    {% if include.presenter.gh %}
+      <a href="{{ include.presenter.gh }}" target="_blank"><span class="icon icon-github"></span></h5>
+    {% endif %}
+    {% if include.presenter.www %}
+      <a href="{{ include.presenter.www }}" target="_blank"><span class="icon icon-link"></span></h5>
+    {% endif %}
+  </div>
 </div>

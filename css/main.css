@@ -160,3 +160,8 @@ body, h1, h2, h3, h4, h5, h6,
   color: #000;
   -webkit-border-radius: 5px;
           border-radius: 5px; }
+
+.social {
+  font-size: 2em; }
+  .social a {
+    text-decoration: none; }
