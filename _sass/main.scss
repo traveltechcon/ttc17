@@ -168,6 +168,10 @@ $gradient: rgba(#000, 0.65);
     linear-gradient($gradient, $gradient),
     url(../img/bg/pitch-competition.jpg);
   background-attachment: fixed;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 #pitch-competition-links {
