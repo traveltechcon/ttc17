@@ -131,10 +131,6 @@ body, h1, h2, h3, h4, h5, h6,
   font-size: 1.5em;
   text-decoration: underline; }
 
-#winners-2016 img {
-  -webkit-border-radius: 4px;
-          border-radius: 4px; }
-
 #workshops {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../img/bg/workshops.jpg);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg/workshops.jpg);
@@ -156,6 +152,11 @@ body, h1, h2, h3, h4, h5, h6,
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
 
-.presenters h4 img {
-  max-width: 200px;
-  max-height: 100px; }
+.company img {
+  max-width: 250px;
+  max-height: 200px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
