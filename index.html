@@ -529,8 +529,10 @@ sponsors:
     <div class="container-fluid">
       <ul class="row list-unstyled justify-content-center my-4">
         {% for image in site.static_files %}
-          {% if image.path contains 'img/attendees' %}
-            <img src="{{ site.baseurl }}{{ image.path }}" alt="">
+          {% if image.path contains 'img/attendees' or image.path contains 'img/companies' %}
+            <li>
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="">
+            </li>
           {% endif %}
         {% endfor %}
       </ul>

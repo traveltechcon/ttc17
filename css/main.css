@@ -165,3 +165,10 @@ body, h1, h2, h3, h4, h5, h6,
   font-size: 2em; }
   .social a {
     text-decoration: none; }
+
+#attendees li {
+  margin: 25px; }
+
+#attendees img {
+  max-width: 200px;
+  max-height: 100px; }
