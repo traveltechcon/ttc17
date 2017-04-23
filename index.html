@@ -394,6 +394,23 @@ sponsors:
     </div>
   </div>
 
+  <div class="block block-secondary text-center px-5 ttc-block" id="attendees">
+    <div class="py-4">
+      <h1 class="block-title">Attendees</h1>
+      <h2>Come to Travel Tech Con 2017 to connect with people from these companies</h2>
+    </div>
+
+    <div class="container-fluid">
+      <ul class="row list-unstyled justify-content-center my-4">
+        {% for image in site.static_files %}
+          {% if image.path contains 'img/attendees' %}
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="">
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
   <iframe id="stay22-widget" width="100%" height="440" src="https://www.stay22.com/embed/travel-tech-con-2017" frameborder="0"></iframe>
 
   <div class="block block-inverse app-footer">
