@@ -166,6 +166,22 @@ body, h1, h2, h3, h4, h5, h6,
   .social a {
     text-decoration: none; }
 
+#sponsors li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #sponsors li img {
+    max-width: 100%; }
+
 #attendees li {
   margin: 20px; }
 

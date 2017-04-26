@@ -225,6 +225,18 @@ $gradient: rgba(#000, 0.65);
   }
 }
 
+#sponsors {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
 #attendees {
   li {
     margin: 20px;
