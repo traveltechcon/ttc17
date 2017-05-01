@@ -133,30 +133,32 @@ judges:
     prize: Mentoring Session
     tw: https://twitter.com/nbobbin
     li: https://www.linkedin.com/in/nathanbobbin/
-workshop_presenters:
-  startup_track:
-    - name: Christina Heggie
-      title: Investment Associate
-      company: JetBlue Technology Ventures
-      company_url: http://www.jetblueventures.com/
-      logo: jetblue
-      headshot: christina-heggie
-      tw: https://twitter.com/christinaheggie
-      li: https://www.linkedin.com/in/christinaheggie
-    - name: William Niejadlik
-      title: Principal
-      company: Niejadlik Consulting
-      company_url: http://www.niejadlik.com/
-      headshot: william-niejadlik
-      li: https://www.linkedin.com/in/williamniejadlik/
-    - name: Dave Rubin
-      title: VP, Marketing Communications
-      company: Greystone Hotels and Hospitality
-      company_url: http://www.greystonehotels.com/
-      logo: greystonehotels
-      headshot: dave-rubin
-      li: https://www.linkedin.com/in/rubindave
-  developer_track:
+workshop_day:
+  - title: Startup Track
+    speakers:
+      - name: Christina Heggie
+        title: Investment Associate
+        company: JetBlue Technology Ventures
+        company_url: http://www.jetblueventures.com/
+        logo: jetblue
+        headshot: christina-heggie
+        tw: https://twitter.com/christinaheggie
+        li: https://www.linkedin.com/in/christinaheggie
+      - name: William Niejadlik
+        title: Principal
+        company: Niejadlik Consulting
+        company_url: http://www.niejadlik.com/
+        headshot: william-niejadlik
+        li: https://www.linkedin.com/in/williamniejadlik/
+      - name: Dave Rubin
+        title: VP, Marketing Communications
+        company: Greystone Hotels and Hospitality
+        company_url: http://www.greystonehotels.com/
+        logo: greystonehotels
+        headshot: dave-rubin
+        li: https://www.linkedin.com/in/rubindave
+  - title: Developer Track
+    speakers:
     - name: Angik Sarkar
       title: Founder and CEO
       company: Waylo
@@ -458,17 +460,9 @@ sponsors:
       </div>
     </div>
 
-    <div class="my-4">
-      <h1>Presenters</h1>
-
-      <div class="container-fluid">
-        <div class="row my-4 justify-content-center presenters">
-          {% for presenter in page.workshop_presenters.startup_track %}
-            {% include presenter.html presenter=presenter %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
+    {% for track in page.workshop_day %}
+      {% include conference-day-track.html track=track %}
+    {% endfor %}
 
     <a href="https://www.eventbrite.com/e/travel-tech-con-2017-tickets-30070691247" class="btn btn-primary btn-lg real-big-button" target="ttc17-tickets">{{ page.tickets_link }}</a>
     <br>
