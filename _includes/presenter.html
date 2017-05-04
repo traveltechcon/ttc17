@@ -3,11 +3,11 @@
   <h3 class="my-4">{{ include.presenter.name }}</h3>
   <h4 class="my-4">{{ include.presenter.title }}<h4>
   <h4 class="my-3">
-    <a href="{{ include.presenter.company_url }}" class="my-4 company" target="_blank">
-      {% if include.presenter.logo %}
-        <img src="img/companies/{{ include.presenter.logo }}.jpg" alt="{{ include.presenter.company }}" title="{{ include.presenter.company }}">
+    <a href="{{ include.presenter.company.url }}" class="my-4 company" target="_blank">
+      {% if include.presenter.company.logo %}
+        <img src="img/companies/{{ include.presenter.company.logo }}.jpg" alt="{{ include.presenter.company.name }}" title="{{ include.presenter.company.name }}">
       {% else %}
-        {{ include.presenter.company }}
+        {{ include.presenter.company.name }}
       {% endif %}
     </a>
   </h4>
@@ -19,7 +19,7 @@
   {% endif %}
   <div class="my-4 text-center social">
     {% if include.presenter.li %}
-      <a href="{{ include.presenter.li }}" target="_blank"><span class="icon icon-linkedin"></span></a>
+      <a href="https://www.linkedin.com/in/{{ include.presenter.li }}" target="_blank"><span class="icon icon-linkedin"></span></a>
     {% endif %}
     {% if include.presenter.tw %}
       <a href="https://twitter.com/{{ include.presenter.tw }}" target="_blank"><span class="icon icon-twitter"></span></a>
