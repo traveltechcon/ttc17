@@ -62,254 +62,480 @@ schedule:
     style: primary
     icon: icon-modern-mic
     registration: 8 am
+companies:
+  - jtv: &jtv
+      name: JetBlue Technology Ventures
+      url: http://www.jetblueventures.com/
+      logo: jetblue
+  - pcw: &pcw
+      name: Phocuswright
+      url: http://www.phocuswright.com/
+      logo: phocuswright
+  - pp: &pp
+      name: Plug and Play Technology Center
+      url: http://plugandplaytechcenter.com/
+      logo: pp
+  - ttconsulting: &ttconsulting
+      name: Travel Tech Consulting
+      url: http://traveltechconsulting.com
+      logo: ttconsulting
+  - deem: &deem
+      name: Deem
+      url: http://deem.com
+      logo: deem
+  - innovel: &innovel
+      name: Innovel
+      url: http://innovel.vc/
+      logo: innovel
+  - travelport: &travelport
+      name: Travelport Labs
+      url: https://www.travelport.com/labs
+      logo: travelport
+  - nc: &nc
+      name: Niejadlik Consulting
+      url: http://www.niejadlik.com/
+  - greystonehotels: &greystonehotels
+      name: Greystone Hotels and Hospitality
+      url: http://www.greystonehotels.com/
+      logo: greystonehotels
+  - waylo: &waylo
+      name: Waylo
+      url: http://thewaylo.com/
+      logo: waylo
+  - hipmunk: &hipmunk
+      name: Hipmunk
+      url: http://plugandplaytechcenter.com/
+      logo: pp
+  - hitlist: &hitlist
+      name: Hitlist
+      url: http://www.hitlistapp.com/
+      logo: hitlist
+  - sabre: &sabre
+      name: Sabre
+      url: http://www.sabre.com
+      logo: sabre
+  - ttc: &ttc
+      name: Travel Tech Con
+      url: http://www.traveltechcon.com
+      logo: ttc
+  - mozio: &mozio
+      name: Mozio
+      url: http://mozio.com
+      logo: mozio
+  - pex: &pex
+      name: PEX+
+      url: http://pexportal.com/
+      logo: pex
+  - claimcompass: &claimcompass
+      name: Claim Compass
+      url: http://www.sabre.com
+      logo: claimcompass
+  - bullpen: &bullpen
+      name: Bullpen Capital
+      url: http://bullpencap.com/
+      logo: bullpen
+  - thayer: &thayer
+      name: Thayer Ventures
+      url: http://www.thayerventures.com/
+      logo: thayer
+  - uber: &uber
+      name: Uber
+      url: http://www.uber.com/
+      logo: uber
+  - bitmatica: &bitmatica
+      name: Bitmatica
+      url: https://www.bitmatica.com/
+      logo: bitmatica
+  - roomstorm: &roomstorm
+      name: Roomstorm
+      url: http://roomstorm.com/
+      logo: roomstorm
+  - 500: &500
+      name: 500 Startups
+      url: https://500.co/
+      logo: 500-startups
+  - 30stf: &30stf
+      name: 30SecondsToFly
+      url: https://www.30secondstofly.com/
+      logo: 30stf
+  - sd: &sd
+      name: Stay Delightful
+      url: https://staydelightful.com/
+      logo: stay-delightful
+  - anyroad: &anyroad
+      name: AnyRoad
+      url: https://www.anyroad.com/
+      logo: anyroad
+  - tourmega: &tourmega
+      name: TourMega
+      url: https://www.tourmega.com/
+      logo: tourmega
+  - busbot: &busbot
+      name: BusBot
+      url: http://busbot.us
+      logo: busbot
+sponsors:
+  - *500
+  - *pcw
+  - *pp
+  - *travelport
 judges:
-  - name: Christina Heggie
-    title: Investment Associate
-    company: JetBlue Technology Ventures
-    company_url: http://www.jetblueventures.com/
-    logo: jetblue
-    headshot: christina-heggie
+  - christina_heggie: &christina_heggie
+      name: Christina Heggie
+      title: Investment Associate
+      company: *jtv
+      headshot: christina-heggie
+      tw: christinaheggie
+      li: https://www.linkedin.com/in/bonnysimi
     prize: |
       Four round-trip tickets on any JetBlue flight<br>
       Mentoring sessions for two startups
-    tw: bonnysimi
-    li: https://www.linkedin.com/in/bonnysimi
-  - name: Michael Coletta
-    title: Manager of Research and Innovation
-    company: Phocuswright
-    company_url: http://www.phocuswright.com/
-    logo: phocuswright
-    headshot: michael-coletta
+  - michael_coletta: &michael_coletta
+      name: Michael Coletta
+      title: Manager of Research and Innovation
+      company: *pcw
+      headshot: michael-coletta
+      tw: michaelcoletta
+      li: https://www.linkedin.com/in/michaelcoletta
     prize: |
       Ticket to The Phocuswright Conference<br>
       Pitch Spot at Phocuswright Battleground
-    tw: michaelcoletta
-    li: https://www.linkedin.com/in/michaelcoletta
-  - name: Amir Amidi
-    title: Managing Partner
-    company: Plug and Play Technology Center
-    company_url: http://plugandplaytechcenter.com/
-    logo: pp
-    headshot: amir-amidi
+  - amir_amidi: &amir_amidi
+      name: Amir Amidi
+      title: Managing Partner
+      company: *pp
+      headshot: amir-amidi
+      li: https://www.linkedin.com/in/amir-amidi-a859a046/
     prize: |
       Entrance to Batch 3 of <a style="text-decoration: underline;" href="http://plugandplaytechcenter.com/corporations/travel-hospitality/">P&amp;P Travel &amp; Hospitality Accelerator</a><br>
       Mentoring sessions for 3 Startups
-    li: https://www.linkedin.com/in/amir-amidi-a859a046/
-  - name: Norm Rose
-    title: President
-    company: Travel Tech Consulting
-    company_url: http://traveltechconsulting.com
-    logo: ttconsulting
-    headshot: norm-rose
+  - norm_rose: &norm_rose
+      name: Norm Rose
+      title: President
+      company: *ttconsilting
+      headshot: norm-rose
+      tw: normtraveltech
+      li: https://www.linkedin.com/in/traveltechnology/
+      www: https://about.me/normrose
     prize: Mentoring Session
-    tw: normtraveltech
-    li: https://www.linkedin.com/in/traveltechnology/
-    www: https://about.me/normrose
-  - name: Gadi Bashvitz
-    title: VP &amp; Group Leader, Car Service
-    company: Deem
-    company_url: http://deem.com
-    logo: deem
-    headshot: gadi-bashvitz
+  - gadi: &gadi
+      name: Gadi Bashvitz
+      title: VP &amp; Group Leader, Car Service
+      company: &deem
+      headshot: gadi-bashvitz
+      tw: bashvitz
+      li: https://www.linkedin.com/in/bashvitz
     prize: |
       $2,000 AWS Credits<br>
       2-hour Mentoring Session
-    tw: bashvitz
-    li: https://www.linkedin.com/in/bashvitz
-  - name: Rom Hendler
-    title: Founder and Managing Partner
-    company: Innovel
-    company_url: http://innovel.vc/
-    logo: innovel
-    headshot: rom-hendler
+  - rom: &rom
+      name: Rom Hendler
+      title: Founder and Managing Partner
+      company: &innovel
+      headshot: rom-hendler
+      li: https://www.linkedin.com/in/rom-hendler-38b5101/
     prize: Mentoring Session
-    li: https://www.linkedin.com/in/rom-hendler-38b5101/
-  - name: Nathan Bobbin
-    title: Senior Director, Product Innovation
-    company: Travelport Labs
-    company_url: https://www.travelport.com/labs
-    logo: travelport
-    headshot: nathan-bobbin
+  - nathan: &nathan
+      name: Nathan Bobbin
+      title: Senior Director, Product Innovation
+      company: *travelport
+      headshot: nathan-bobbin
+      tw: nbobbin
+      li: https://www.linkedin.com/in/nathanbobbin/
     prize: Mentoring Session
-    tw: nbobbin
-    li: https://www.linkedin.com/in/nathanbobbin/
 workshop_day:
   - title: Startup Track
-    speakers:
-      - name: Christina Heggie
-        title: Investment Associate
-        company: JetBlue Technology Ventures
-        company_url: http://www.jetblueventures.com/
-        logo: jetblue
-        headshot: christina-heggie
-        tw: christinaheggie
-        li: https://www.linkedin.com/in/christinaheggie
-      - name: Ajay Sharma
-        title: Investment Associate
-        company: JetBlue Technology Ventures
-        company_url: http://www.jetblueventures.com/
-        logo: jetblue
-        headshot: ajay-sharma
-        tw: asharma1104
-        li: https://www.linkedin.com/in/asharma2/
-      - name: William Niejadlik
-        title: Principal
-        company: Niejadlik Consulting
-        company_url: http://www.niejadlik.com/
-        headshot: william-niejadlik
-        li: https://www.linkedin.com/in/williamniejadlik/
-      - name: Dave Rubin
-        title: VP, Marketing Communications
-        company: Greystone Hotels and Hospitality
-        company_url: http://www.greystonehotels.com/
-        logo: greystonehotels
-        headshot: dave-rubin
-        li: https://www.linkedin.com/in/rubindave
+    sessions:
+      - title: ___
+        time: 9:00 am
+        duration: 1:30
+        description: ___
+        speakers:
+          - *christina_heggie
+          - ajay: &ajay
+              name: Ajay Sharma
+              title: Investment Associate
+              company: *jtv
+              headshot: ajay-sharma
+              tw: asharma1104
+              li: https://www.linkedin.com/in/asharma2/
+      - title: ___
+        time: 10:45 am
+        duration: 1:30
+        description: ___
+        speakers:
+          - felicia: &felicia
+            name: Felicia Schneiderhan
+            title: Founder &amp; CEO
+            company: *30stf
+            headshot: felicia
+            tw: felicia_s_
+            li: https://www.linkedin.com/in/feliciaschneiderhan/
+      - title: ___
+        time: 1:30 pm
+        duration: 1:30
+        description: ___
+        speakers:
+          - wn: &wn
+              name: William Niejadlik
+              title: Principal
+              company: *nc
+              headshot: william-niejadlik
+              li: https://www.linkedin.com/in/williamniejadlik/
+      - title: ___
+        time: 3:15 pm
+        duration: 1:30
+        description: ___
+        speakers:
+          - dave_rubin: &dave_rubin
+              name: Dave Rubin
+              title: VP, Marketing Communications
+              company: *greystonehotels
+              headshot: dave-rubin
+              li: https://www.linkedin.com/in/rubindave
+      - title: ___
+        time: 5:00 pm
+        duration: 1:30
+        description: ___
+        speakers:
+          - *michael_coletta
   - title: Developer Track
-    speakers:
-    - name: Angik Sarkar
-      title: Founder and CEO
-      company: Waylo
-      company_url: http://thewaylo.com/
-      logo: waylo
-      headshot: angik-sarkar
-      li: https://www.linkedin.com/in/angiksarkar
-      tw: kyunbit
+    sessions:
+      - title: How to Build a Chatbot
+        time: 9:00 am
+        duration: 3:00
+        description: At this workshop you will build a simple chatbot and add NLP to it (Wit.ai, API.ai, Rasa, NLTK). You will also learn about non-NLP machine learning tools, like Scikit Learn, and add sentiment analysis to your chatbot for human handover.
+        speakers:
+          - angik: &angik
+              name: Angik Sarkar
+              title: Founder and CEO
+              headshot: angik-sarkar
+              li: https://www.linkedin.com/in/angiksarkar
+              bio: Angik holds a patent for a new neural network architecture proposed during his PhD at Purdue.
+              company: *waylo
 conference_day:
-  - title: Keynote Speakers
-    speakers:
-      - name: Adam Goldstein
-        title: Founder and CEO
-        company: Hipmunk
-        headshot: adam-goldstein
-        company_url: http://www.hipmunk.com/
-        logo: hipmunk
-        tw: adamjgoldstein
-        li: https://www.linkedin.com/in/adam-goldstein-510bbb22/
-      - name: Gillian Morris
-        title: Founder and CEO
-        company: Hitlist
-        headshot: gillian-morris
-        company_url: http://www.hitlistapp.com/
-        logo: hitlist
-        tw: gillianim
-        li: https://www.linkedin.com/in/gillianim
-        www: http://gillian.im/
-      - name: Sarah Kennedy
-        title: VP, Global Marketing
-        company: Sabre
-        headshot: sarah-kennedy
-        company_url: http://www.sabre.com
-        logo: sabre
-        li: https://www.linkedin.com/in/saykay/
-      - name: Tahnee Perry
-        title: Marketing Strategist
-        company: Deem
-        headshot: tahnee-perry
-        company_url: http://www.deem.com
-        logo: deem
-        li: https://www.linkedin.com/in/tahneeperry/
-      - name: Maksim Izmaylov
-        title: Founder
-        company: Travel Tech Con
-        headshot: maksim-izmaylov
-        company_url: http://www.traveltechcon.com
-        logo: ttc
-        tw: kvakes
-        li: https://www.linkedin.com/in/maksimizmaylov/
-        www: http://kvakes.com
-        gh: https://github.com/kvakes
+  - title: Keynotes
+    sessions:
+      - title: We Want Those Flying Cars
+        time: 9:00 am
+        duration: 0:20
+        description: Maksim will talk about the plan for taking the travel industry from its current state to flying cars.
+        speakers:
+          - maksim: &maksim
+              name: Maksim Izmaylov
+              title: Founder
+              company: *ttc
+              headshot: maksim-izmaylov
+              tw: kvakes
+              li: https://www.linkedin.com/in/maksim-izmaylov/
+              www: http://kvakes.com
+      - title: ___
+        time: 9:25 am
+        duration: 0:35
+        description: ___
+        speakers:
+          - gillian: &gillian
+            name: Gillian Morris
+            title: Founder and CEO
+            company: *hitlist
+            headshot: gillian-morris
+            tw: gillianim
+            li: https://www.linkedin.com/in/gillianim
+            www: http://gillian.im/
+      - title: ___
+        time: 10:05 am
+        duration: 0:35
+        description: ___
+        speakers:
+          - adam: &adam
+              name: Adam Goldstein
+              title: Founder and CEO
+              company: *hipmunk
+              tw: adamjgoldstein
+              li: https://www.linkedin.com/in/adam-goldstein-510bbb22/
+      - title: ___
+        time: 10:45 am
+        duration: 0:35
+        description: ___
+        speakers:
+          - sarah: &sarah
+              name: Sarah Kennedy
+              title: VP, Global Marketing
+              company: *sabre
+              headshot: sarah-kennedy
+              li: https://www.linkedin.com/in/saykay/
+      - title: ___
+        time: 11:25 am
+        duration: 0:35
+        description: ___
+        speakers:
+          - tahnee: &tahnee
+            name: Tahnee Perry
+            title: Marketing Strategist
+            company: *deem
+            headshot: tahnee-perry
+            li: https://www.linkedin.com/in/tahneeperry/
   - title: Startup Track
-    speakers:
-      - name: Norm Rose
-        title: President
-        company: Travel Tech Consulting
-        headshot: norm-rose
-        company_url: http://traveltechconsulting.com
-        logo: ttconsulting
-        tw: normtraveltech
-        li: https://www.linkedin.com/in/traveltechnology/
-        www: https://about.me/normrose
-      - name: Emre Mangir
-        title: COO, Head of Partnerships
-        company: Mozio
-        headshot: emre-mangir
-        company_url: http://mozio.com
-        logo: mozio
-        li: https://www.linkedin.com/in/emremangir
-        gh:
-      - name: Jessica Coane
-        title: Founder
-        company: PEX+
-        headshot: jessica-coane
-        company_url: http://pexportal.com/
-        logo: pex
-        tw: aCarpathian
-        li: https://www.linkedin.com/in/jessicacoane
-      - name: Alex Sumin
-        title: Founder and CMO
-        company: Claim Compass
-        headshot: alex-sumin
-        company_url: https://www.claimcompass.eu/
-        logo: claimcompass
-        li: https://www.linkedin.com/in/alexandersumin
-      - name: Eric Wiesen
-        title: General Partner
-        company: Bullpen Capital
-        headshot: eric-wiesen
-        company_url: http://bullpencap.com/
-        logo: bullpen-capital
-        tw: ewiesen
-        li: https://www.linkedin.com/in/ewiesen
-      - name: Christopher Hemmeter
-        title: Managing Director
-        company: Thayer Ventures
-        headshot: christopher-hemmeter
-        company_url: http://www.thayerventures.com/
-        logo: thayer-ventures
-        tw: chrishemmeter
-        li: https://www.linkedin.com/in/christopherhemmeter
+    sessions:
+      - title: VC Panel
+        time: 1:00 pm
+        duration: 0:35
+        description: Discussion about VC funding in the travel industry
+        speakers:
+          - eric: &eric
+              name: Eric Wiesen
+              title: General Partner
+              company: *bullpen
+              headshot: eric-wiesen
+              tw: ewiesen
+              li: https://www.linkedin.com/in/ewiesen
+          - *christina
+          - *rom
+          - chris: &chris
+              name: Christopher Hemmeter
+              title: Managing Director
+              company: *thayer
+              headshot: christopher-hemmeter
+              tw: chrishemmeter
+              li: https://www.linkedin.com/in/christopherhemmeter
+      - title: Two Viewpoints on Startup-Corporate Partnerships
+        time: 1:40 pm
+        duration: 0:35
+        description:
+        speakers:
+          - emre: &emre
+              name: Emre Mangir
+              title: COO, Head of Partnerships
+              company: *mozio
+              headshot: emre-mangir
+              li: https://www.linkedin.com/in/emremangir
+          - jon: &jon
+              name: Jonathan Lee
+              title: Founder &amp; CEO
+              company: *sd
+              headshot: jon-lee
+              li: https://www.linkedin.com/in/jonathanylee/
+      - title:
+        time: 2:35 pm
+        duration: 0:35
+        description:
+        speakers:
+          - alex_sumin: &alex_sumin
+              name: Alex Sumin
+              title: Founder &amp; CMO
+              company: *claimcompass
+              headshot: alex-sumin
+              li: https://www.linkedin.com/in/alexandersumin
+      - title:
+        time: 3:15 pm
+        duration: 0:35
+        description:
+        speakers:
+          - jessica: &jessica
+              name: Jessica Coane
+              title: Founder
+              company: *pex
+              headshot: jessica-coane
+              tw: aCarpathian
+              li: https://www.linkedin.com/in/jessicacoane
+      - title: Don't Start a Travel Startup
+        time: 4:10 pm
+        duration: 0:35
+        description:
+        speakers:
+          - jonathan: &jonathan
+              name: Jonathan Yaffe
+              title: Founder &amp; CEO
+              company: *anyroad
+              headshot: jonathan-yaffe
+              tw: whereisyaffe
+              li: https://www.linkedin.com/in/yaffe
+      - title: What Does it Take to Win at Phocuswright?
+        time: 4:50 pm
+        duration: 0:35
+        description:
+        speakers:
+          - *norm
   - title: Developer Track
-    speakers:
-      - name: Christine Kim
-        title: Software Engineer
-        company: Uber
-        headshot: christine-kim
-        company_url: http://www.uber.com/
-        logo: uber
-        li: https://www.linkedin.com/in/christinexkim/
-        gh: https://github.com/christinekim
-      - name: Matt Hubert
-        title: Founder and Chief Email Officer
-        company: Bitmatica
-        headshot: matt-hubert
-        company_url: https://www.bitmatica.com/
-        logo: bitmatica
-        tw: aclimatt
-        li: https://www.linkedin.com/in/aclimatt/
-        www: http://www.aclimatt.com/
-      - name: Nicolás Berger
-        title: Senior Engineer
-        company: Roomstorm
-        headshot: nicolas-berger
-        company_url: https://roomstorm.com/
-        logo: roomstorm
-        tw: nicoberger
-        li: https://www.linkedin.com/in/nicolasberger/
-        gh: https://github.com/nberger
-sponsors:
-  - name: 500 Startups
-    url: https://500.co/
-    logo: 500-startups
-  - name: Phocuswright
-    url: http://www.phocuswrightconference.com/
-    logo: phocuswright
-  - name: Plug and Play Tech Center
-    url: http://plugandplaytechcenter.com/
-    logo: pp
-  - name: Travelport Labs
-    url: https://www.travelport.com/labs
-    logo: travelport
+    sessions:
+      - title: IoT and Wearables
+        time: 1:00 pm
+        duration: 0:35
+        description:
+        speakers:
+          - ckim: &ckim
+              name: Christine Kim
+              title: Software Engineer
+              company: *uber
+              headshot: christine-kim
+              li: https://www.linkedin.com/in/christinexkim/
+              gh: https://github.com/christinekim
+      - title: Clojurescript and React in Production
+        time: 1:40 pm
+        duration: 0:35
+        description:
+        speakers:
+          - nicoberger: &nicoberger
+              name: Nicolas Bergér
+              title: Senior Engineer
+              company: *roomstorm
+              headshot: nicolas-berger
+              tw: nicoberger
+              li: https://www.linkedin.com/in/nicolasberger/
+              gh: https://github.com/nberger
+      - title: Blockchain Explained
+        time: 2:35 pm
+        duration: 0:35
+        description:
+        speakers:
+      - title: Web Scraping and Machine Intelligence
+        time: 3:15 pm
+        duration: 0:35
+        description:
+        speakers:
+          - quynh: &quynh
+              name: Quynh Pham
+              title: Founder &amp; CEO
+              company: *tourmega
+              headshot: quynh-pham
+              li: https://www.linkedin.com/in/phamquynh
+          - thang: &thang
+              name: Thang Dao
+              title: Founder &amp; CTO
+              company: *tourmega
+              headshot: thang-dao
+              li: https://www.linkedin.com/in/thang-dao-b851b41a/
+          - jzhu: &jzhu
+              name: John Zhu
+              title: Data Scientist
+              company: *tourmega
+              headshot: john-zhu
+              li: https://www.linkedin.com/in/jz-ds/
+      - title: Building Innovative Travel UX for Enterprise
+        time: 4:10 pm
+        duration: 0:35
+        description:
+        speakers:
+          - matt: &matt
+              name: Matt Hubert
+              title: Founder and Chief Email Officer
+              company: *bitmatica
+              headshot: matt-hubert
+              tw: aclimatt
+              li: https://www.linkedin.com/in/aclimatt/
+              www: http://www.aclimatt.com/
+      - title: Travel Light - A "Carry-on" Approach to Machine Learning
+        time: 4:50 pm
+        duration: 0:35
+        description: Artificial intelligence is changing the way we travel. But you don't have to be an machine learning expert to reap the benefits of this transformative technology. We'll explore some practical use-cases that will delight your users and move your product forward.
+        speakers:
+          - shawn: &shawn
+              name: Shawn Vo
+              title: Founder &amp; CTO
+              company: *busbot
+              headshot: shawn-vo
+              tw: shawnvo
+              li: https://www.linkedin.com/in/shawnvo/
 ---
 
 <div class="stage" id="stage">
