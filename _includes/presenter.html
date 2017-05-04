@@ -11,11 +11,8 @@
       {% endif %}
     </a>
   </h4>
-  {% if include.presenter.prize %}
+  {% if include.presenter.prize and include.prize == 1 %}
     <h5>{{ include.presenter.prize }}</h5>
-  {% endif %}
-  {% if include.presenter.talk_title %}
-    <h5>{{ include.presenter.talk_title }}</h5>
   {% endif %}
   <div class="my-4 text-center social">
     {% if include.presenter.li %}
