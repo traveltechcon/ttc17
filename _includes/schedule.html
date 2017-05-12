@@ -4,14 +4,14 @@
   <div class="container-fluid">
     <dl class="schedule">
       {% for session in track.sessions %}
-        <dt class="my-2">{{ session.time }} ({{ session.duration }})</dt>
+        <dt class="my-2">{{ session.time }}<br>{{ session.duration }}</dt>
         <dd style="margin-bottom: 3em;">
           <h4>{{ session.title }}</h4>
           <div>
             {% for presenter in session.speakers %}
               {{ presenter.name }}
               {% if presenter.company.url %}
-                (<a href="{{ presenter.company.url }}">{{ presenter.company.name }}</a>)
+                (<a style="text-decoration: underline;" href="{{ presenter.company.url }}">{{ presenter.company.name }}</a>)
               {% else %}
                 ({{ presenter.company.name }})
               {% endif %}<br>
