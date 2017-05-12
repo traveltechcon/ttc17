@@ -479,10 +479,9 @@ judges:
 workshop_day:
   - title: Startup Track
     sessions:
-      - title: ___
+      - title: TBD
         time: 9:00 am
         duration: 1:30
-        description: ___
         speakers:
           - *christina_heggie
           - *ajay
@@ -797,6 +796,16 @@ conference_day:
       </div>
     </div>
 
+    <h2 class="text-center">Schedule</h2>
+    <div class="row">
+      {% for track in page.workshop_day %}
+        <div class="col-md-6">
+          {% include schedule.html track=track %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <h2 class="text-center">Speakers</h2>
     {% for track in page.workshop_day %}
       {% include conference-day-track.html track=track %}
     {% endfor %}
