@@ -597,7 +597,7 @@ conference_day:
         description:
         speakers:
           - *ckim
-      - title: Clojurescript and React in Production
+      - title: Flying with ClojureScript and React
         time: 1:40 pm
         duration: 35m
         description:
@@ -628,6 +628,24 @@ conference_day:
         description: AI is changing the way we travel, but you don't have to be a machine learning expert to implement this technology. We'll explore some practical use-cases that will delight your users and move your product forward.
         speakers:
           - *shawn
+  - title: Closing Session
+    sessions:
+      - title: Pitch Competition Winner Announcement
+        time: 5:30 pm
+        duration: 30m
+        description: Our partners from JetBlue Technology Ventures will kick off the final session followed by the announcement of pitch competition winners (there will be more than one!)
+        speakers:
+          - *christina_heggie
+          - *michael_coletta
+          - *amir_amidi
+          - *norm_rose
+          - *gadi
+          - *rom
+          - *chris
+          - *nathan
+          - *henry
+          - *kerri
+          - *sylvie
 ---
 
 <div class="stage" id="stage">
@@ -840,8 +858,15 @@ conference_day:
       {% endif %}{% endfor %}
     </div>
     <div class="row">
-      {% for track in page.conference_day %}{% if forloop.index0 != 0 %}
+      {% for track in page.conference_day %}{% if forloop.index0 != 0 and forloop.index0 != 3 %}
         <div class="col-md-6">
+          {% include schedule.html track=track %}
+        </div>
+      {% endif %}{% endfor %}
+    </div>
+    <div class="row">
+      {% for track in page.conference_day %}{% if forloop.last %}
+        <div class="col-12">
           {% include schedule.html track=track %}
         </div>
       {% endif %}{% endfor %}
