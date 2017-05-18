@@ -198,7 +198,28 @@ companies:
       name: Hostfully
       url: http://hostfully.com
       logo: hostfully
+  - wt: &wt
+      name: Winding Tree
+      url: http://windingtree.com
+      logo: winding-tree
 people:
+  - jakub: &jakub
+      name: Jakub Vysoký
+      title: Chief Architect
+      company: *wt
+      headshot: jakub
+      tw: kvbik
+      li: jakubvysoky
+      gh: kvbik
+  - max_wt: &max_wt
+      name: Maksim Izmaylov
+      title: Chief Electrification Officer
+      headshot: max_wt
+      company: *wt
+      tw: kvakes
+      li: maksim-izmaylov
+      gh: kvakes
+      www: http://kvakes.com
   - christina_heggie: &christina_heggie
       name: Christina Heggie
       title: Investment Associate
@@ -297,6 +318,7 @@ people:
       li: angiksarkar
       bio: Angik holds a patent for a new neural network architecture proposed during his PhD at Purdue.
       company: *waylo
+      tw: kyunbit
   - maksim: &maksim
       name: Maksim Izmaylov
       title: Founder
@@ -525,6 +547,9 @@ workshop_day:
         time: 3:15 pm
         duration: 1h 30m
         description: A coding session after which you will be able to deploy a simple smart contract on Ethereum
+        speakers:
+          - *max_wt
+          - *jakub
 conference_day:
   - title: Keynotes
     sessions:
