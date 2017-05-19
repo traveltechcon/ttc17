@@ -4,19 +4,30 @@
   <div class="container-fluid">
     <dl class="schedule">
       {% for session in track.sessions %}
-        <dt class="my-2">{{ session.time }}<br>{{ session.duration }}</dt>
+        <dt class="my-2" style="font-size: 1.2em;">{{ session.time }}<br>{{ session.duration }}</dt>
         <dd style="margin-bottom: 3em;">
-          <h4>{{ session.title }}</h4>
-          <div>
-            {% for presenter in session.speakers %}
-              {{ presenter.name }}
-              {% if presenter.company.url %}
-                (<a style="text-decoration: underline;" href="{{ presenter.company.url }}">{{ presenter.company.name }}</a>)
+          {% if session.title %}
+            <h4>{{ session.title }}</h4>
+            <div>
+              {% for presenter in session.speakers %}
+                {{ presenter.name }}
+                {% if presenter.company.url %}
+                  (<a style="text-decoration: underline;" href="{{ presenter.company.url }}">{{ presenter.company.name }}</a>)
+                {% else %}
+                  ({{ presenter.company.name }})
+                {% endif %}<br>
+              {% endfor %}
+            </div>
+          {% else %}
+            <h4>{{ session.speakers.first.name }}</h4>
+            <div>
+              {% if session.speakers.first.company.url %}
+                <a style="text-decoration: underline;" href="{{ presenter.company.url }}">{{ session.speakers.first.company.name }}</a>
               {% else %}
-                ({{ presenter.company.name }})
+                {{ session.speakers.first.company.name }}
               {% endif %}<br>
-            {% endfor %}
-          </div>
+            </div>
+          {% endif %}
         </dd>
       {% endfor %}
     </dl>
