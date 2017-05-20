@@ -132,12 +132,30 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+#ttc-video {
+  padding: 50px;
+  background: #000;
+
+  iframe {
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    height: 337px;
+  }
+}
+
 #industry-quote {
   @media (min-width: 576px) {
     .pull-quote > img {
       width: 200px;
       height: 200px;
     }
+  }
+}
+
+#patron {
+  img {
+    max-width: 100%;
   }
 }
 

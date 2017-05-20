@@ -95,10 +95,22 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a {
 #call-to-action p {
   font-size: 1.2em; }
 
+#ttc-video {
+  padding: 50px;
+  background: #000; }
+  #ttc-video iframe {
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    height: 337px; }
+
 @media (min-width: 576px) {
   #industry-quote .pull-quote > img {
     width: 200px;
     height: 200px; } }
+
+#patron img {
+  max-width: 100%; }
 
 .ttc-block {
   background-position: 50% 0%;
