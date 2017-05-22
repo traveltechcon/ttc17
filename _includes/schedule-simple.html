@@ -1,0 +1,31 @@
+<h2>{{ include.track[include.index].title }}</h2>
+
+<ol class="unstyled">
+{% for session in include.track[include.index].sessions %}
+  <li>
+    <p>{{ session.time }}<br>{{ session.duration }}</p>
+    {% if session.title %}
+      <h4>{{ session.title }}</h4>
+      <div>
+        {% for presenter in session.speakers %}
+          {{ presenter.name }}
+          {% if presenter.company.url %}
+            (<a style="text-decoration: underline;" href="{{ presenter.company.url }}">{{ presenter.company.name }}</a>)
+          {% else %}
+            ({{ presenter.company.name }})
+          {% endif %}<br>
+        {% endfor %}
+      </div>
+    {% else %}
+      <h4>{{ session.speakers.first.name }}</h4>
+      <div>
+        {% if session.speakers.first.company.url %}
+          <a style="text-decoration: underline;" href="{{ presenter.company.url }}">{{ session.speakers.first.company.name }}</a>
+        {% else %}
+          {{ session.speakers.first.company.name }}
+        {% endif %}<br>
+      </div>
+    {% endif %}
+  </li>
+{% endfor %}
+</ol>

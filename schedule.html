@@ -5,6 +5,132 @@ slug: schedule
 one_liner: The conference for travel&nbsp;startups and&nbsp;developers.
 ---
 
-<div id="schedule">
-  zzz
+<header>
+  <h1><img src="img/ttc-logo-small.png"></h1>
+  <h2>Travel Tech Con 2017 Schedule</h2>
+
+  <ol class="unstyled inline">
+    {% for d in site.data.data.schedule %}
+      <li>
+        <a href="#{{ d.date | downcase | replace: " ", "-" }}">{{ d.date }}: {{ d.event }}</a>
+      </li>
+    {% endfor %}
+  </ol>
+</header>
+
+<!-- Pitch Competition -->
+<div id="may-22" class="day">
+  <h2>{{ site.data.data.schedule[0].date }} &mdash; {{ site.data.data.schedule[0].event }}</h2>
+
+  <p style="margin-bottom: 50px;"><a href="{{ site.data.data.schedule[0].map_url }}" target="{{ site.data.data.schedule[0].target }}">
+    <span class="icon icon-map"></span>
+    {{ site.data.data.schedule[0].venue }}
+    {{ site.data.data.schedule[0].address }}
+  </a></p>
+
+  <ol class="unstyled">
+    <li class="col-12 my-2">
+      <h3>Registration &mdash; 12:01 pm</h3>
+      <p style="text-align: center;">Coffee, Snacks, Networking</p>
+    </li>
+    <li class="col-12 my-2">
+      <h3>Presentations &mdash; 1:00 pm</h3>
+      <p style="text-align: center;">All ticket holders are welcome!</p>
+    </li>
+    <li class="col-12 my-2">
+      <h3>Networking &mdash; 6:00 pm</h3>
+      <p style="text-align: center;">Awesome Bar Nearby</p>
+    </li>
+    <li class="col-12 my-2">
+      <h3>Winner Announcement &mdash; May 24</h3>
+      <p style="text-align: center;">May 24, 5:30 pm at Treasure Island Venue</p>
+    </li>
+  </ol>
+</div>
+
+<div id="may-23" class="day">
+  <h2>{{ site.data.data.schedule[1].date }} &mdash; {{ site.data.data.schedule[1].event }}</h2>
+
+  <p style="margin-bottom: 50px;"><a href="{{ site.data.data.schedule[1].map_url }}" target="{{ site.data.data.schedule[1].target }}">
+    <span class="icon icon-map"></span>
+    {{ site.data.data.schedule[1].venue }}
+    {{ site.data.data.schedule[1].address }}
+  </a></p>
+
+  <ol class="unstyled">
+    <li>
+      <h3>Registration &mdash; 8:00 am</h3>
+      <p>Coffee, Snacks, Networking</p>
+    </li>
+    <li>
+      <h3>Presentations &mdash; 9:00 am</h3>
+      <p>Full Ticket Required</p>
+    </li>
+    <li>
+      <h3>Lunch &mdash; 12:30 pm</h3>
+      <p>Boxed Lunch Provided</p>
+    </li>
+    <li>
+      <h3>Networking &mdash; 6:30 pm</h3>
+      <p>Awesome Bar Nearby</p>
+    </li>
+  </ol>
+
+  <div class="tracks-wrapper">
+    <div class="track-1">
+      {% include schedule-simple.html track=site.data.data.workshop_day index=0 %}
+    </div>
+    <div class="track-2">
+      {% include schedule-simple.html track=site.data.data.workshop_day index=1 %}
+    </div>
+  </div>
+</div>
+
+<div id="may-24" class="day" style="border: none;">
+  <h2>{{ site.data.data.schedule[2].date }} &mdash; {{ site.data.data.schedule[2].event }}</h2>
+
+  <p style="margin-bottom: 50px;"><a href="{{ site.data.data.schedule[2].map_url }}" target="{{ site.data.data.schedule[2].target }}">
+    <span class="icon icon-map"></span>
+    {{ site.data.data.schedule[2].venue }}
+    {{ site.data.data.schedule[2].address }}
+  </a></p>
+
+  <ol class="unstyled">
+    <li>
+      <h3>Registration &mdash; 8:00 am</h3>
+      <p>Coffee, Snacks, Networking</p>
+    </li>
+    <li>
+      <h3>Presentations &mdash; 9:00 am</h3>
+    </li>
+    <li>
+      <h3>Lunch &mdash; 12:15 pm</h3>
+      <p>Boxed Lunch Provided</p>
+    </li>
+    <li>
+      <h3>Afterparty &mdash; 7:00 pm</h3>
+      <p>Hawthorn, 46 Geary St.</p>
+    </li>
+  </ol>
+
+  <div class="keynotes" style="margin: 100px 0;">
+    {% include schedule-simple.html track=site.data.data.conference_day index=0 %}
+  </div>
+  <div class="tracks-wrapper">
+    <div class="track-1">
+      {% include schedule-simple.html track=site.data.data.conference_day index=1 %}
+    </div>
+    <div class="track-2">
+      {% include schedule-simple.html track=site.data.data.conference_day index=2 %}
+    </div>
+  </div>
+  <div class="afterparty" style="margin: 100px 0;">
+    <h2>Afterparty</h2>
+    <h3>Hawthorn</h3>
+    <div>46 Geary St.<br>7 pm</div>
+    <div><a href="http://hawthornsf.com" style="text-align: center;">hawthornsf.com</a></div>
+    <h3>DJ Justin Paul</h3>
+    <div><a href="http://justinpaul.com" style="text-align: center;">justinpaul.com</a></div>
+    <p>Open Bar for First 75 TTC Attendees</p>
+  </div>
 </div>

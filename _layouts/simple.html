@@ -11,12 +11,59 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:200,400,600" rel="stylesheet">
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <style type="text/css">
-    div {
-      background: #c03;
+    body {
+      font-family: "Kanit", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1, h2 {
+      font-weight: 200;
+    }
+
+    h3, h4 {
+      font-weight: 600;
+    }
+
+    ol.unstyled {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ol.inline li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .day {
+      text-align: center;
+      padding: 0 0 50px 0;
+      margin: 0 0 50px 0;
+      border-bottom: 1px solid #000;
+    }
+
+    @media (min-width: 576px) {
+      .tracks-wrapper {
+        display: flex;
+      }
+
+      .tracks-wrapper > div {
+        width: 50%;
+        text-align: center;
+        margin: 50px 0;
+      }
+    }
+
+    .tracks-wrapper ol li {
+      margin-top: 50px;
     }
     </style>
 
