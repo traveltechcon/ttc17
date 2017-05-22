@@ -210,7 +210,17 @@ companies:
       name: Mezi
       url: http://mezi.com/
       logo: mezi
+  - bp: &bp
+      name: Beyond Pricing
+      url: https://beyondpricing.com/
+      logo: beyond-pricing
 people:
+  - david: &david
+      name: David Kelso
+      title: CTO &amp; Co-Founder
+      company: *bp
+      li: davidkelso
+      headshot: kelso
   - swapnil: &swapnil
       name: Swapnil Shinde
       title: CEO &amp; Co-Founder
@@ -652,11 +662,12 @@ conference_day:
         description:
         speakers:
           - *nicoberger
-      - title: TBD
+      - title: My data is bigger than your data, and I don't use hadoop
         time: 2:35 pm
         duration: 35m
         description:
         speakers:
+          - *david
       - title: Web Scraping at Scale
         time: 3:15 pm
         duration: 35m
