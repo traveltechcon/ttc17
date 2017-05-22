@@ -1,0 +1,688 @@
+teasers:
+  - number: 3
+    what: days
+    caption: May 22-24, 2017 in San Francisco, California
+  - number: 28
+    what: talks
+    caption: 10 Workshops, 1 Pitch Competition
+  - number: 2
+    what: tracks
+    caption: Startup Track + Developer Track
+  - number: 50%
+    what: travel startups
+    caption: 200+ attendees
+  - number: 1
+    what: Afterparty
+    caption: DJ Justin Paul
+schedule:
+  - date: May 22
+    event: Pitch Competition
+    venue: 500 Startups
+    address: 814 Mission Street, 6th Floor
+    map_url: https://goo.gl/maps/DszBuskr2oy
+    target: 500startups
+    style: success
+    icon: icon-trophy
+    registration: 12 pm
+  - date: May 23
+    event: Workshops
+    venue: 500 Startups
+    address: 814 Mission Street, 6th Floor
+    map_url: https://goo.gl/maps/DszBuskr2oy
+    target: 500startups
+    style: info
+    icon: icon-laptop
+    registration: 8 am
+  - date: May 24
+    event: Conference Day
+    venue: HOME on Treasure Island
+    address: 401 13th St
+    map_url: https://goo.gl/maps/HNEADWELAG62
+    target: homeonti
+    style: primary
+    icon: icon-modern-mic
+    registration: 8 am
+companies:
+  - jtv: &jtv
+      name: JetBlue Technology Ventures
+      url: http://www.jetblueventures.com/
+      logo: jetblue
+  - pcw: &pcw
+      name: Phocuswright
+      url: http://www.phocuswright.com/
+      logo: phocuswright
+  - pp: &pp
+      name: Plug and Play Technology Center
+      url: http://plugandplaytechcenter.com/
+      logo: pp
+  - ttconsulting: &ttconsulting
+      name: Travel Tech Consulting
+      url: http://traveltechconsulting.com
+      logo: ttconsulting
+  - deem: &deem
+      name: Deem
+      url: http://deem.com
+      logo: deem
+  - innovel: &innovel
+      name: Innovel
+      url: http://innovel.vc/
+      logo: innovel
+  - travelport: &travelport
+      name: Travelport Labs
+      url: https://www.travelport.com/labs
+      logo: travelport
+  - datalex: &datalex
+      name: Datalex
+      url: https://www.datalex.com
+      logo: datalex
+  - nc: &nc
+      name: Niejadlik Consulting
+      url: http://www.niejadlik.com/
+  - greystonehotels: &greystonehotels
+      name: Greystone Hotels and Hospitality
+      url: http://www.greystonehotels.com/
+      logo: greystonehotels
+  - waylo: &waylo
+      name: Waylo
+      url: http://thewaylo.com/
+      logo: waylo
+  - hipmunk: &hipmunk
+      name: Hipmunk
+      url: http://hipmunk.com/
+      logo: hipmunk
+  - hitlist: &hitlist
+      name: Hitlist
+      url: http://www.hitlistapp.com/
+      logo: hitlist
+  - sabre: &sabre
+      name: Sabre
+      url: http://www.sabre.com
+      logo: sabre
+  - ttc: &ttc
+      name: Travel Tech Con
+      url: http://www.traveltechcon.com
+      logo: ttc
+  - mozio: &mozio
+      name: Mozio
+      url: http://mozio.com
+      logo: mozio
+  - pex: &pex
+      name: PEX+
+      url: http://pexportal.com/
+      logo: pex
+  - claimcompass: &claimcompass
+      name: Claim Compass
+      url: http://www.sabre.com
+      logo: claimcompass
+  - bullpen: &bullpen
+      name: Bullpen Capital
+      url: http://bullpencap.com/
+      logo: bullpen-capital
+  - thayer: &thayer
+      name: Thayer Ventures
+      url: http://www.thayerventures.com/
+      logo: thayer-ventures
+  - uber: &uber
+      name: Uber
+      url: http://www.uber.com/
+      logo: uber
+  - bitmatica: &bitmatica
+      name: Bitmatica
+      url: https://www.bitmatica.com/
+      logo: bitmatica
+  - roomstorm: &roomstorm
+      name: Roomstorm
+      url: http://roomstorm.com/
+      logo: roomstorm
+  - 500: &500
+      name: 500 Startups
+      url: https://500.co/
+      logo: 500-startups
+  - 30stf: &30stf
+      name: 30SecondsToFly
+      url: https://www.30secondstofly.com/
+      logo: 30stf
+  - sd: &sd
+      name: Stay Delightful
+      url: https://staydelightful.com/
+      logo: stay-delightful
+  - anyroad: &anyroad
+      name: AnyRoad
+      url: https://www.anyroad.com/
+      logo: anyroad
+  - tourmega: &tourmega
+      name: TourMega
+      url: https://www.tourmega.com/
+      logo: tourmega
+  - busbot: &busbot
+      name: BusBot
+      url: http://busbot.us
+      logo: busbot
+  - cockpit: &cockpit
+      name: Cockpit Innovation Hub
+      url: http://www.cockpitinnovation.com/
+      logo: cockpit
+  - amadeus: &amadeus
+      name: Amadeus
+      url: http://www.amadeus.com/msite/amadeusforstartups/index.html
+      logo: amadeus
+  - maven: &maven
+      name: Maven
+      url: https://www.mavendrive.com/
+      logo: maven
+  - switchfly: &switchfly
+      name: Switchfly
+      url: https://switchfly.com/
+      logo: switchfly
+  - hostfully: &hostfully
+      name: Hostfully
+      url: http://hostfully.com
+      logo: hostfully
+  - wt: &wt
+      name: Winding Tree
+      url: http://windingtree.com
+      logo: winding-tree
+  - fte: &fte
+      name: Future of Travel Experience
+      url: http://www.futuretravelexperience.com/
+      logo: fte
+  - mezi: &mezi
+      name: Mezi
+      url: http://mezi.com/
+      logo: mezi
+  - bp: &bp
+      name: Beyond Pricing
+      url: https://beyondpricing.com/
+      logo: beyond-pricing
+people:
+  - david: &david
+      name: David Kelso
+      title: CTO &amp; Co-Founder
+      company: *bp
+      li: davidkelso
+      headshot: kelso
+  - swapnil: &swapnil
+      name: Swapnil Shinde
+      title: CEO &amp; Co-Founder
+      company: *mezi
+      li: swapnilshinde
+      headshot: swapnil
+  - abram: &abram
+      name: Abram Richman
+      title: Chief Product Architect
+      company: *datalex
+      headshot: abram-richman
+  - jakub: &jakub
+      name: Jakub Vysoký
+      title: Chief Architect
+      company: *wt
+      headshot: jakub
+      tw: kvbik
+      li: jakubvysoky
+      gh: kvbik
+  - max_wt: &max_wt
+      name: Maksim Izmaylov
+      title: Chief Electrification Officer
+      headshot: max_wt
+      company: *wt
+      tw: kvakes
+      li: maksim-izmaylov
+      gh: kvakes
+      www: http://kvakes.com
+  - christina_heggie: &christina_heggie
+      name: Christina Heggie
+      title: Investment Associate
+      company: *jtv
+      headshot: christina-heggie
+      tw: christinaheggie
+      li: christinaheggie
+      prize: |
+        Four round-trip tickets on any JetBlue flight<br>
+        Mentoring sessions for two startups
+  - michael_coletta: &michael_coletta
+      name: Michael Coletta
+      title: Manager of Research and Innovation
+      company: *pcw
+      headshot: michael-coletta
+      tw: michaelcoletta
+      li: michaelcoletta
+      prize: |
+        Ticket to The Phocuswright Conference<br>
+        Pitch Spot at <a href="https://www.phocuswrightbattleground.com/">Phocuswright Battleground: The Americas</a>
+  - amir_amidi: &amir_amidi
+      name: Amir Amidi
+      title: Managing Partner
+      company: *pp
+      headshot: amir-amidi
+      li: amir-amidi-a859a046
+      prize: |
+        Entrance to Batch 3 of <a href="http://plugandplaytechcenter.com/corporations/travel-hospitality/">P&amp;P Travel &amp; Hospitality Accelerator</a><br>
+        Mentoring sessions for 3 Startups
+  - norm_rose: &norm_rose
+      name: Norm Rose
+      title: President
+      company: *ttconsulting
+      headshot: norm-rose
+      tw: normtraveltech
+      li: traveltechnology
+      www: https://about.me/normrose
+      prize: Two Hours of Free Consulting
+  - gadi: &gadi
+      name: Gadi Bashvitz
+      title: VP &amp; Group Leader, Car Service
+      company: *deem
+      headshot: gadi-bashvitz
+      tw: bashvitz
+      li: bashvitz
+      prize: |
+        $2,000 AWS Credits<br>
+        2-hour Mentoring Session
+  - rom: &rom
+      name: Rom Hendler
+      title: Founder and Managing Partner
+      company: *innovel
+      headshot: rom-hendler
+      li: rom-hendler-38b5101
+      prize: Mentoring Session
+  - nathan: &nathan
+      name: Nathan Bobbin
+      title: Senior Director, Product Innovation
+      company: *travelport
+      headshot: nathan-bobbin
+      tw: nbobbin
+      li: nathanbobbin
+      prize: |
+        Funding from Travelport Labs ($30,000)
+  - ajay: &ajay
+      name: Ajay Sharma
+      title: Investment Associate
+      company: *jtv
+      headshot: ajay-sharma
+      tw: asharma1104
+      li: asharma2
+  - felicia: &felicia
+      name: Felicia Schneiderhan
+      title: Founder &amp; CEO
+      company: *30stf
+      headshot: felicia
+      tw: felicia_s_
+      li: feliciaschneiderhan
+      bio: Felicia Schneiderhan has a background in Public Management and Economics. During her Master degree she invented a new hair styling tool and founded her first company with a supply chain from China to Lithuania. In 2014 Felicia met Riccardo Vittoria during their Fulbright year at NYU and in 2015 they set out to revolutionize corporate travel with their company 30SecondsToFly.
+  - wn: &wn
+      name: William Niejadlik
+      title: Principal
+      company: *nc
+      headshot: william-niejadlik
+      li: williamniejadlik
+  - dave_rubin: &dave_rubin
+      name: Dave Rubin
+      title: VP, Marketing Communications
+      company: *greystonehotels
+      headshot: dave-rubin
+      li: rubindave
+  - angik: &angik
+      name: Angik Sarkar
+      title: Founder and CEO
+      headshot: angik-sarkar
+      li: angiksarkar
+      bio: Angik holds a patent for a new neural network architecture proposed during his PhD at Purdue.
+      company: *waylo
+      tw: kyunbit
+  - maksim: &maksim
+      name: Maksim Izmaylov
+      title: Founder
+      company: *ttc
+      headshot: maksim-izmaylov
+      tw: kvakes
+      li: maksim-izmaylov
+      www: http://kvakes.com
+  - gillian: &gillian
+      name: Gillian Morris
+      title: Founder and CEO
+      company: *hitlist
+      headshot: gillian-morris
+      tw: gillianim
+      li: gillianim
+      www: http://gillian.im/
+  - adam: &adam
+      name: Adam Goldstein
+      title: Founder and CEO
+      company: *hipmunk
+      headshot: adam-goldstein
+      tw: adamjgoldstein
+      li: adam-goldstein-510bbb22
+  - sarah: &sarah
+      name: Sarah Kennedy
+      title: VP, Global Marketing
+      company: *sabre
+      headshot: sarah-kennedy
+      li: saykay
+  - tahnee: &tahnee
+      name: Tahnee Perry
+      title: Marketing Strategist
+      company: *deem
+      headshot: tahnee-perry
+      li: tahneeperry
+      bio: Tahnee leads the marketing team for Deem’s innovative business travel products. Tahnee is responsible for driving strategy and implementation for Deem’s branding, marketing, and sales enablement. Prior to Deem, Tahnee held positions with Northstar Travel Group, the travel industry’s leading information and marketing solutions provider and Phocuswright, the travel industry research authority. Prior to that, she held marketing, technology and sales roles with the Aspen/Snowmass ski resort. Tahnee graduated from the University of Canberra in Australia and moved to the United States in 2002. She’s a recent transplant from Brooklyn, New York.
+  - eric: &eric
+      name: Eric Wiesen
+      title: General Partner
+      company: *bullpen
+      headshot: eric-wiesen
+      tw: ewiesen
+      li: ewiesen
+  - chris: &chris
+      name: Christopher Hemmeter
+      title: Managing Director
+      company: *thayer
+      headshot: christopher-hemmeter
+      tw: chrishemmeter
+      li: christopherhemmeter
+  - emre: &emre
+      name: Emre Mangir
+      title: COO, Head of Partnerships
+      company: *mozio
+      headshot: emre-mangir
+      li: emremangir
+  - jon: &jon
+      name: Jonathan Lee
+      title: Founder &amp; CEO
+      company: *sd
+      headshot: jon-lee
+      li: jonathanylee
+  - alex_sumin: &alex_sumin
+      name: Alex Sumin
+      title: Founder &amp; CMO
+      company: *claimcompass
+      headshot: alex-sumin
+      li: alexandersumin
+  - jessica: &jessica
+      name: Jessica Coane
+      title: Founder
+      company: *pex
+      headshot: jessica-coane
+      tw: aCarpathian
+      li: jessicacoane
+  - ckim: &ckim
+      name: Christine Kim
+      title: Software Engineer
+      company: *uber
+      headshot: christine-kim
+      li: christinexkim
+      gh: christinekim
+  - nicoberger: &nicoberger
+      name: Nicolás Berger
+      title: Senior Engineer
+      company: *roomstorm
+      headshot: nicolas-berger
+      tw: nicoberger
+      li: nicolasberger
+      gh: nberger
+  - quynh: &quynh
+      name: Quynh Pham
+      title: Founder &amp; CEO
+      company: *tourmega
+      headshot: quynh-pham
+      li: phamquynh
+  - thang: &thang
+      name: Thang Dao
+      title: Founder &amp; CTO
+      company: *tourmega
+      headshot: thang-dao
+      li: thang-dao-b851b41a
+  - jzhu: &jzhu
+      name: John Zhu
+      title: Data Scientist
+      company: *tourmega
+      headshot: john-zhu
+      li: jz-ds
+  - matt: &matt
+      name: Matt Hubert
+      title: Founder and Chief Email Officer
+      company: *bitmatica
+      headshot: matt-hubert
+      tw: aclimatt
+      li: aclimatt
+      www: http://www.aclimatt.com/
+  - shawn: &shawn
+      name: Shawn Vo
+      title: Founder &amp; CTO
+      company: *busbot
+      headshot: shawn-vo
+      tw: shawnvo
+      li: shawnvo
+  - margot: &margot
+      name: Margot Schmorak
+      title: CEO &amp; Founder
+      company: *hostfully
+      headshot: margot
+      li: mschmorak
+      tw: schmorak
+  - henry: &henry
+      name: Henry Chen Weinstein
+      title: CEO
+      company: *cockpit
+      headshot: henry
+      tw: henrycweinstein
+      li: henrychenweinstein
+      prize: |
+        Entry to <a href="http://www.cockpitinnovation.com/navigator/">Navigator Accelerator Program</a><br>
+        Investment from <a href="http://www.cockpitinnovation.com/navigator/">Navigator Accelerator Program</a>
+  - kerri: &kerri
+      name: Kerri Zeil
+      title: Head of Amadeus for Startups
+      company: *amadeus
+      headshot: kerri
+      tw: kaz_travelz
+      li: kazeil
+      bio: Kerri brings to Amadeus years of executive-level experience in ecommerce, travel distribution, strategic planning and global operations.  Prior to joining Amadeus North America as Head of Amadeus for Startups, Kerri held roles within the GDS industry, at Orbitz Worldwide, and at their European brand eBookers. As an early member of the Orbitz team, Kerri had hands-on experience at a startup and was responsible for the execution of several global business and technology initiatives.  With years of expertise in the industry and managing cross-cultural and cross-functional teams, her experience with both traditional and startup organizations gives her unique insight into how to best deliver technology solutions and services targeted to established online travel brands and industry startups.
+      prize: |
+        One year of web services fees waived<br>
+        16 hours of consulting sessions (industry &amp; technology expertise)
+  - sylvie: &sylvie
+      name: Sylvie Charbonnier
+      title: VP Partnerships, Business Development &amp; Marketing
+      company: *switchfly
+      headshot: sylvie-charbonnier
+      li: https://www.linkedin.com/in/sylviecharbonnier/
+      bio:
+      prize: |
+        Pitch product in front of 1 of our client (comprised of large airlines, FI's and Hotel Chains)<br>
+        Invite to Switchfly Thought Leadership Summit in Napa
+sponsors:
+  - *datalex
+  - *pcw
+  - *pp
+  - *travelport
+  - *cockpit
+  - *maven
+  - *fte
+judges:
+  - *christina_heggie
+  - *michael_coletta
+  - *amir_amidi
+  - *norm_rose
+  - *gadi
+  - *rom
+  - *nathan
+  - *henry
+  - *kerri
+  - *sylvie
+workshop_day:
+  - title: Startup Track
+    sessions:
+      - title: Working with a Strategic Investor
+        time: 9:00 am
+        duration: 1h 30m
+        description: What to know, how to maximize your partnership, and why you should.
+        speakers:
+          - *christina_heggie
+          - *ajay
+      - title: Hacking Acquisition of Corporate Customers
+        time: 10:45 am
+        duration: 1h 30m
+        description: In this workshop we will have a look at how to successfully set up an inbound customer acquisition engine for corporate travel products. We’ll look at use cases and dissect the process of hacking PR, SEO and social media to build out a strong thought leadership position online. We’ll talk about how to align product strategy with an inbound acquisition model and how to drive conversions that ultimately lead to customer signups.
+        speakers:
+          - *felicia
+      - title: Air Distribution 101 for Startups
+        time: 1:30 pm
+        duration: 1h 30m
+        description: A introduction to air distribution methods, technologies, and players for companies starting out in the travel industry.  Learn what ATPCO does, the difference between a nego fare and private fare, what AVS, NDC, and ARC stands for, and what you need to know to become a travel agency.
+        speakers:
+          - *wn
+      - title: Startup Confessional &mdash; Who, What, Where, Why &amp; How to Pitch Your Travel Product
+        time: 3:15 pm
+        duration: 1h 30m
+        description: A conversation and discussion led by a travel industry pro who fields hundreds of travel startup pitches each year.  Are you in the right place? How do you know your speaking with the best person?  What do I need to do to get someone to listen to me?  Where I am going wrong? What am I doing right? Nothing is off limits in this “confessional workshop” aimed to help travel startups increase their chances of adoption and success.
+        speakers:
+          - *dave_rubin
+      - title: Mentoring Session with Michael Coletta
+        time: 5:00 pm
+        duration: 1h 30m
+        speakers:
+          - *michael_coletta
+  - title: Developer Track
+    sessions:
+      - title: How to Build a Chatbot
+        time: 9:00 am
+        duration: 3h
+        description: At this workshop you will build a simple chatbot and add NLP to it (Wit.ai, API.ai, Rasa, NLTK). You will also learn about non-NLP machine learning tools, like Scikit Learn, and add sentiment analysis to your chatbot for human handover.
+        speakers:
+          - *angik
+      - title: From e-ticket to One Order
+        time: 1:30 pm
+        duration: 1h 30m
+        speakers:
+          - *abram
+      - title: Introduction to Blockchain and Smart Contracts
+        time: 3:15 pm
+        duration: 1h 30m
+        description: A coding session after which you will be able to deploy a simple smart contract on Ethereum
+        speakers:
+          - *max_wt
+          - *jakub
+conference_day:
+  - title: Keynotes
+    sessions:
+      - title: We Wanted Flying Cars...
+        time: 9:00 am
+        duration: 20m
+        description: Travel Tech Con's plan to take us to the future with flying cars.
+        speakers:
+          - *maksim
+      - time: 9:25 am
+        duration: 35m
+        speakers:
+          - *gillian
+      - time: 10:05 am
+        duration: 35m
+        speakers:
+          - *adam
+      - time: 10:45 am
+        duration: 35m
+        speakers:
+          - *swapnil
+      - title: Are Travel Startups Still Relevant?
+        time: 11:25 am
+        duration: 35m
+        description: Yes, but you’re crazy if you start one. The industry maxim for innovation says that for every ten ventures, two will fail outright, six will stagger along as walking wounded and two will hit home runs – hello Airbnb and Uber. If 80 percent of startups all but fail, why start one? You’re either remarkably brave or undeniably foolish. Regulation, low margins, consolidation, fragmentation, legacy technology and fickle consumers leave behind an unattractive and almost impenetrable market for entrepreneurs and their venture funding. But according to Phocuswright and CB Insight’s latest data, a few bright spots remain for the tenacious and courageous. Join the session to find out what they are.
+        speakers:
+          - *tahnee
+  - title: Startup Track
+    sessions:
+      - title: VC Panel
+        time: 1:00 pm
+        duration: 35m
+        description: Discussion about VC funding in the travel industry
+        speakers:
+          - *eric
+          - *christina_heggie
+          - *rom
+          - *chris
+      - title: Data Opportunities in the Travel and Loyalty Spaces
+        time: 1:40 pm
+        duration: 35m
+        description: Learn about big data in the travel and loyalty spaces, current big data issues, and how your company can seize these industry opportunities.
+        speakers:
+          - *jessica
+      - title: The New Old Marketing &mdash; Why Beating Your Customers Won't Help You Beat the Competition
+        time: 2:35 pm
+        duration: 35m
+        description: The talk will address growth and marketing approaches in the travel sector, within an increasingly challenging environment of high levels of uncertainty and rapid change.
+        speakers:
+          - *alex_sumin
+      - title: Two Viewpoints on Startup-Corporate Partnerships
+        time: 3:15 pm
+        duration: 35m
+        description:
+        speakers:
+          - *emre
+          - *jon
+      - title: Considering Accelerator Programs &mdash; Risks and Benefits
+        time: 4:10 pm
+        duration: 35m
+        speakers:
+          - *margot
+      - title: What Does it Take to Win at Phocuswright?
+        time: 4:50 pm
+        duration: 35m
+        speakers:
+          - *norm_rose
+  - title: Developer Track
+    sessions:
+      - title: IoT and Wearables
+        time: 1:00 pm
+        duration: 35m
+        description:
+        speakers:
+          - *ckim
+      - title: Flying with ClojureScript and React
+        time: 1:40 pm
+        duration: 35m
+        description:
+        speakers:
+          - *nicoberger
+      - title: My data is bigger than your data, and I don't use hadoop
+        time: 2:35 pm
+        duration: 35m
+        description:
+        speakers:
+          - *david
+      - title: Web Scraping at Scale
+        time: 3:15 pm
+        duration: 35m
+        description: What do you do when you are working with amazing app that does not have an API? Web Scraping is your only way. Let's talk about how to scrape data with ease, get around IP addresses blocking with proxies and turn other people's data into yours.
+        speakers:
+          - *quynh
+          - *thang
+          - *jzhu
+      - title: Building Innovative Travel UX for Enterprise
+        time: 4:10 pm
+        duration: 35m
+        description: User experience is paramount for today's innovative travel apps, and enterprises are often left behind to watch startups drive user growth and satisfaction through superior experiences. This talk covers the do's and don'ts of building modern user experiences for even the most legacy of applications.
+        speakers:
+          - *matt
+      - title: Travel Light &mdash; A "Carry-On" Approach to Machine Learning
+        time: 4:50 pm
+        duration: 35m
+        description: AI is changing the way we travel, but you don't have to be a machine learning expert to implement this technology. We'll explore some practical use-cases that will delight your users and move your product forward.
+        speakers:
+          - *shawn
+  - title: Closing Session
+    sessions:
+      - title: Pitch Competition Winner Announcement
+        time: 5:30 pm
+        duration: 30m
+        description: Our partners from JetBlue Technology Ventures will kick off the final session followed by the announcement of pitch competition winners (there will be more than one!)
+        speakers:
+          - *christina_heggie
+          - *michael_coletta
+          - *amir_amidi
+          - *norm_rose
+          - *gadi
+          - *rom
+          - *chris
+          - *nathan
+          - *henry
+          - *kerri
+          - *sylvie
