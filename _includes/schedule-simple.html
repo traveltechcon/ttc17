@@ -26,6 +26,11 @@
         {% endif %}<br>
       </div>
     {% endif %}
+    {% if session.description %}
+    <div style="margin: 1em 0; padding: 0 5em;">
+      {{ session.description }}
+    </div>
+    {% endif %}
   </li>
 {% endfor %}
 </ol>
