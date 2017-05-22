@@ -103,7 +103,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a {
     display: block;
     width: 600px;
     height: 337px;
-    max-width: 100%; }
+    max-width: 100%;
+    display: none; }
 
 @media (min-width: 576px) {
   #industry-quote .pull-quote > img {
