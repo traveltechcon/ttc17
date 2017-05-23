@@ -630,10 +630,10 @@ conference_day:
           - *norm_rose
   - title: Developer Track
     sessions:
-      - title: IoT and Wearables
+      - title: The Internet of Things is already here—and it's much bigger than you realize
         time: 1:00 pm
         duration: 35m
-        description:
+        description: Everyone's waiting for the Internet of Things to arrive—but it's already here. And surprisingly, our Internet of Things is not really about the "things" at all. See how IoT has already profoundly changed our world and where Uber thinks it will go next.
         speakers:
           - *ckim
       - title: Flying with ClojureScript and React
