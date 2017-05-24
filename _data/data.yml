@@ -570,7 +570,8 @@ conference_day:
         description: Travel Tech Con's plan to take us to the future with flying cars.
         speakers:
           - *maksim
-      - time: 9:25 am
+      - title: Why Investors Hate Travel  And Why They’re Wrong
+        time: 9:25 am
         duration: 35m
         speakers:
           - *gillian
