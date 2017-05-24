@@ -579,9 +579,10 @@ conference_day:
         speakers:
           - *adam
       - time: 10:45 am
+        title: State of Startups
         duration: 35m
         speakers:
-          - *swapnil
+          - *michael_coletta
       - title: Are Travel Startups Still Relevant?
         time: 11:25 am
         duration: 35m
